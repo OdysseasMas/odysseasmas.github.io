@@ -11,7 +11,7 @@ if (window.location.pathname == "/dist/index.html"){
   dataText = document.getElementById('twrite');
   option_used = option1;
 } else{
-   dataText = document.getElementById('twrite');
+   dataText = document.getElementById('twrite-two');
    option_used = option2;
   }
 
