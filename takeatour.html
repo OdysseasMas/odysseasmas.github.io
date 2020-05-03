@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class = "modifiers">
+            <div class = "social-media">
+                <a onclick = "smDirect('fb')" href="/dist/index.html" > <img src = "img/fb.png" class ="sm-btn"></a>
+                <a onclick = "smDirect('ig')"  > <img src = "img/ig.png" class ="sm-btn"></a>
+            </div>          
+            <div class="translators">
+                <button href="#eng" class = "lang">EN</button> 
+                <button href="#gre" class = "lang">GR</button>
+            </div>
+        </div>
+        <div class = "navbar">
+            <button class ="btn-links" onclick = "setTimeout(function(){ pDirect('home')},650)" > Home </button> 
+            <button class ="btn-links" onclick = "setTimeout(function(){ pDirect('takeatour')},650)"> Take a tour </button> 
+            <div class = "logo-menu-ctr"> 
+                <a href="/dist/index.html" > <img src = "img/ACLogo.png" id ="logo"></a>
+                <div id = "one-space"> 
+                    <div class="menu-ctr">
+                        <a class="mbline"></a>
+                        <a class="mbline"></a>
+                        <a class="mbline"></a>
+                    </div>
+                </div>
+            </div>
+            <button class ="btn-links" onclick = "setTimeout(function(){ pDirect('whoweare')},650)"> Who we are </button> 
+            <button class ="btn-links" onclick = "setTimeout(function(){pDirect('contactus')}, 650)"> Contact us </button> 
+        </div>
+
+        <nav class = "menu">
+            <ul class = "menu-nav">
+                <li class = "nav-item">
+                    <a href= "/dist/index.html" class = "nav-link"> Home </a>
+                </li>
+                <li class = "nav-item">
+                    <a href= "/dist/takeatour.html" class = "nav-link"> Take a Tour </a>
+                </li>
+                <li class = "nav-item">
+                    <a href= "/dist/whoweare.html" class = "nav-link"> Who we are </a>
+                </li>
+                <li class = "nav-item">
+                    <a href= "/dist/contactus.html" class = "nav-link"> Contact us </a>
+                </li>
+            </ul>
+        </nav>
+        
+    
+    </header>
+
+    <div class ="welcome-ctr">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/nav.js"></script> 
+        <div class="iframe-ctr">
+             <iframe class = "ifr" src="https://www.youtube.com/embed/CMqKrmPSy2E?mute=1" 
+             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+             allowfullscreen></iframe>
+        </div>
+
+        <div class="msg-ctr">
+            <div class="msg-box">
+                <p class = "welcome-text">
+                    We will take you there. Keep scrolling.
+                </p>
+            </div>
+            
+        </div>
+        
+        <div class="iframe-ctr">
+            <iframe class = "ifr" src="https://www.youtube.com/embed/9VMzX1YqVWY?mute=1" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            
+        </div>
+        
+    </div>
+
+   
+
+    <div class="options-wrapper">
+        <div class = "options-ctr">
+            <a href="#one"> How It Works </a>
+            <a href="#two"> Boat Logistics </a>
+            <a href="#three"> Food </a>
+            <a href="#four"> Pricing </a>
+            <a href="#five"> Our Promise </a>
+            
+        </div>
+    </div>
+
+    <div class="board-wrapper">
+        <div class="board-ctr">
+            <div id="one" class="box-ctr">
+                <p> How do we start? </p>
+            </div>
+            <div class="rect-ctr">
+                <p>
+                    The meeting spot will be revealed upon successful
+                    reservation and payment. We offer two boat tours 
+                    daily, depending on the local weather forecast. The 
+                    morning tour starts at 10 AM and ends at 4 PM while
+                    the evening one runs from 4 30 PM to 9 30 PM.
+                </p>
+            </div>
+        </div>
+        <div class="board-ctr">
+            <div class="rect-ctr">
+                <p>
+                    Don't worry about a thing! We got you. Upon 
+                    arrival we will provide each passenger with sunscreen,
+                    tanning oil, towels, a snorkel set, swimming fins, paddling
+                    boards and more!
+                </p>
+                
+            </div>
+            <div id="two" class="box-ctr">
+                <p>
+                    What should I bring with?
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="board-ctr">
+            <div class="box-ctr">
+                <p>
+                    How Many People On Board?
+                </p>
+               
+            </div>
+            <div class="rect-ctr">
+                <p>
+                    The maximum amount of people on board is 8 (+2 crew members). You can book
+                    the entire boat or individual tickets instead.
+                </p>
+                
+            </div>
+            
+        </div>
+
+        
+        <div class="board-ctr">
+            <div class="rect-ctr">
+                <p>
+                    Yes! Check out or menu below. Let
+                    us know of any allergies or special
+                    dietary restrictions. Tell us in advance
+                    and we will provide vegan or vegeterian
+                    options if needed.
+               </p> 
+
+            </div>
+            <div id="three" class="box-ctr">
+               <p>
+                    Will meals be included?
+               </p> 
+            </div>
+            
+        </div>
+        <div class="catalogue-ctr">
+            <div class="s two">
+                
+                <a onmouseover="showMyImg('bc', ' .s')">butter croissant</a>
+                <a onmouseover="showMyImg('cc', ' .s')">chocolate croissant</a>
+                <a onmouseover="showMyImg('tr', ' .s')">phyllo wrapped cheese bites</a>
+                <a onmouseover="showMyImg('lk', ' .s')">phyllo wrapped susage bites</a>
+                <a onmouseover="showMyImg('oj',' .s')">orange juice</a>
+                <a onmouseover="showMyImg('aj', ' .s')">apple juice</a>
+                
+            </div>
+            <div class="s one">
+                <div class="b one">
+                    
+                        <a onmouseover="showMyImg('shp', ' .b')">shrimp pasta</a>
+                        <a onmouseover="showMyImg('ts', ' .b')">taramosalata</a>
+                        <a onmouseover="showMyImg('ma', ' .b')">marinated anchovies</a>
+                         <a onmouseover="showMyImg('gs', ' .b')">greek salad</a>
+
+
+                    
+                        <a onmouseover="showMyImg('sp',' .b')">spinach pie</a>
+                        <a onmouseover="showMyImg('tz', ' .b')">tzatziki</a>
+                        <a onmouseover="showMyImg('ps',' .b')">pork skewers</a>
+                        <a onmouseover="showMyImg('cs', ' .b')">chicken skewers</a>
+
+   
+                   
+                </div>
+
+                <div class="b two">
+                    <div class="c one">
+                       
+                        <a onmouseover="showMyImg('fg', ' .c')">finger food</a>
+                        
+                    </div>
+
+                    <div class="c two">
+                        <div class="d one">
+                            <a onmouseover="showMyImg('alc', ' .d')">alcohol</a>
+
+                        </div>
+                        <div class="d two">
+                            <div class="e one">
+                                    
+                            </div>
+                            <div class="e two">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <div class="board-ctr">
+            <div id="four" class="box-ctr">
+                <p>
+                    I'm In! But How Much?
+                </p>
+                
+            </div>
+            <div class="rect-ctr">
+                <p>
+                    The fare per person is 85€ for the morning trip and 
+                    35€ for the evening trip. To reserve the entire boat 
+                    one needs to pay 680€ for the morning trip or 360€
+                    for the evening trip. For special accomodations contact 
+                    us directly.
+                </p>
+                
+            </div>
+        </div>
+        <div class="board-ctr">
+            <div class="rect-ctr">
+                <p>
+                    We promise that our profesionally trained crew will guarantee a 
+                    safe and enjoyable experience for everyone!
+                </p>
+                
+            </div>
+            <div id="five" class="box-ctr">
+                <p>
+                    What do we promise?
+                </p>
+               
+            </div>
+        </div>
+        
+        
+
+    </div>
+
+    <script src="js/ttour.js"></script> 
+</body>
