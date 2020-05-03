@@ -1,0 +1,19 @@
+{
+  "name": "argo-cruising",
+  "version": "1.0.0",
+  "description": "boat tour agency",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Odysseas Masmanidis",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "aos": "^2.3.4",
+    "interactjs": "^1.9.10",
+    "jquery": "^3.5.0",
+    "node-sass": "^4.13.1",
+    "typewriter-effect": "^2.13.1"
+  }
+}

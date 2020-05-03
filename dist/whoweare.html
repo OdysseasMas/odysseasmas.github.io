@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <div class = "modifiers">
+            <div class = "social-media">
+                <a onclick = "smDirect('fb')" href="/dist/index.html" > <img src = "img/fb.png" class ="sm-btn"></a>
+                <a onclick = "smDirect('ig')"  > <img src = "img/ig.png" class ="sm-btn"></a>
+            </div>          
+            <div class="translators">
+                <button href="#eng" class = "lang">EN</button> 
+                <button href="#gre" class = "lang">GR</button>
+            </div>
+        </div>
+        <div class = "navbar">
+            <button class ="btn-links" onclick = "setTimeout(function(){ pDirect('home')},650)" > Home </button> 
+            <button class ="btn-links" onclick = "setTimeout(function(){ pDirect('takeatour')},650)"> Take a tour </button> 
+            <div class = "logo-menu-ctr"> 
+                <a href="/dist/index.html" > <img src = "img/ACLogo.png" id ="logo"></a>
+                <div id = "one-space"> 
+                    <div class="menu-ctr">
+                        <a class="mbline"></a>
+                        <a class="mbline"></a>
+                        <a class="mbline"></a>
+                    </div>
+                </div>
+            </div>
+            <button class ="btn-links" onclick = "setTimeout(function(){ pDirect('whoweare')},650)"> Who we are </button> 
+            <button class ="btn-links" onclick = "setTimeout(function(){pDirect('contactus')}, 650)"> Contact us </button> 
+        </div>
+
+        <nav class = "menu">
+            <ul class = "menu-nav">
+                <li class = "nav-item">
+                    <a href= "/dist/index.html" class = "nav-link"> Home </a>
+                </li>
+                <li class = "nav-item">
+                    <a href= "/dist/takeatour.html" class = "nav-link"> Take a Tour </a>
+                </li>
+                <li class = "nav-item">
+                    <a href= "/dist/whoweare.html" class = "nav-link"> Who we are </a>
+                </li>
+                <li class = "nav-item">
+                    <a href= "/dist/contactus.html" class = "nav-link"> Contact us </a>
+                </li>
+            </ul>
+        </nav>
+        
+    
+    </header>
+    <script src="js/nav.js"></script>
+
+    <div class="wwa-ctr">
+        <div class="info-wrapper">
+            <h1 id ="twrite">
+
+            </h1>
+
+        </div>
+      
+        <div class="pics-wrapper">
+            <div class="pic-ctr">
+             
+                <div id="bio-one" >
+
+                </div>
+                
+            </div>
+            <div class="pic-ctr">
+                
+                <div id="bio-two"> 
+
+                </div>
+              
+            </div>
+    
+    
+        </div>
+      
+        
+        <div class="bio-wrapper">
+            <div class="bio-greg">
+                <p>
+                    My name is Greg and I am a professional water polo player who also studies 
+                    Maritime Studies. One can definitely say that I have been around water my entire
+                    life. I can't wait to meet you all and have really fun trips. 
+
+                </p>
+                
+            </div>
+            <div class="bio-john">
+                <p>
+                    Hi, I am John and I have been a competitive swimmer for many years while I also
+                    study Economics. I'm an avid sea sports enthusiast as well and trust me when I 
+                    say that this boat is all you need for your next vacation!
+
+                </p>
+                
+            </div>
+    
+        </div>
+        <script src="js/typewriter.js"></script> 
+    </div>
+
+</body>

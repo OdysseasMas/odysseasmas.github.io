@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class = "modifiers">
+            <div class = "social-media">
+                <a onclick = "smDirect('fb')" href="/dist/index.html" > <img src = "img/fb.png" class ="sm-btn"></a>
+                <a onclick = "smDirect('ig')"  > <img src = "img/ig.png" class ="sm-btn"></a>
+            </div>          
+            <div class="translators">
+                <button href="#eng" class = "lang">EN</button> 
+                <button href="#gre" class = "lang">GR</button>
+            </div>
+        </div>
+        <div class = "navbar">
+            <button class ="btn-links" onclick = "setTimeout(function(){ pDirect('home')},650)" > Home </button> 
+            <button class ="btn-links" onclick = "setTimeout(function(){pDirect('takeatour')}, 650)"> Take a tour </button> 
+            <div class = "logo-menu-ctr"> 
+                <a href="/dist/index.html" > <img src = "img/ACLogo.png" id ="logo"></a>
+                <div id = "one-space"> 
+                    <div class="menu-ctr">
+                        <a class="mbline"></a>
+                        <a class="mbline"></a>
+                        <a class="mbline"></a>
+                    </div>
+                </div>
+            </div>
+            <button class ="btn-links" onclick = "setTimeout(function(){pDirect('whoweare')}, 650)"> Who we are </button> 
+            <button class ="btn-links" onclick = "setTimeout(function(){pDirect('contactus')}, 650)"> Contact us </button> 
+        </div>
+    
+        <nav class = "menu">
+            <ul class = "menu-nav">
+                <li class = "nav-item">
+                    <a href= "/dist/index.html" class = "nav-link"> Home </a>
+                </li>
+                <li class = "nav-item">
+                    <a href= "/dist/takeatour.html" class = "nav-link"> Take a Tour </a>
+                </li>
+                <li class = "nav-item">
+                    <a href= "/dist/whoweare.html" class = "nav-link"> Who we are </a>
+                </li>
+                <li class = "nav-item">
+                    <a href= "/dist/contactus.html" class = "nav-link"> Contact us </a>
+                </li>
+            </ul>
+        </nav>
+        
+       
+    </header>
+    <script src="js/nav.js"></script> 
+
+    <div class="cnt-ctr">
+        <div class = "cnt-info">
+            <p> Call us: (+30) 6940900589 (+30) 6940900589 </p>
+            <p> or email us: <a href="mailto:argocruising@gmail.com"> argocruising@gmail.com</a> </p>
+        </div>
+    </div>
+
+</body>

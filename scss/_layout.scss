@@ -1,0 +1,126 @@
+$primary-color:#F2EBD4; // Eggshell
+$secondary-color: #354863; // Indigo dye for take a tour
+$third-color:#212422; // eery black
+
+
+html, body {
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+    font-family: 'Futura';  
+}
+
+header{
+    min-height: 23vh;
+}
+
+// Layout for social media and language buttons.
+.modifiers{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.lang {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.menu-ctr{
+    cursor:pointer;
+    width: 40px;
+    margin: 0 auto;
+}
+
+.mbline{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+
+    background: white;
+    border:1px solid black;
+
+}
+
+.navbar {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+#logo{
+    width: 300px;
+}
+
+#one-space{
+    margin-top: 2rem;
+}
+
+#two-space{
+    min-height: 77vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+// COntact us
+
+.cnt-ctr{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 60vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    .cnt-info{
+        background-color: $secondary-color;
+        -webkit-box-shadow: 8px -6px 7px 3px rgba(0,0,0,0.39);
+                box-shadow: 8px -6px 7px 3px rgba(0,0,0,0.39);
+        border-radius: 0.7%;
+        height: 30vh;
+        width: 50vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        p{
+            font-size: 1.4em;
+            color: $primary-color;
+            text-align: center;
+        }
+        a {
+            color: $third-color;
+        }
+
+    }
+}
+
+

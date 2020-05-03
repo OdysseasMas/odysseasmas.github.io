@@ -1,0 +1,325 @@
+$primary-color:#F2EBD4; // Eggshell
+$secondary-color: #354863; // Indigo dye for take a tour
+$third-color:#212422; // eery black
+
+
+//Social Media buttons' animation
+@-webkit-keyframes filter-animation{
+    0% {-webkit-filter: grayscale(65%) ;filter: grayscale(65%) ;}
+    50% {-webkit-filter: grayscale(25%) ;filter: grayscale(25%) ;}
+    100% {-webkit-filter: grayscale(0%);filter: grayscale(0%);} 
+}
+
+
+@keyframes filter-animation{
+    0% {-webkit-filter: grayscale(65%) ;filter: grayscale(65%) ;}
+    50% {-webkit-filter: grayscale(25%) ;filter: grayscale(25%) ;}
+    100% {-webkit-filter: grayscale(0%);filter: grayscale(0%);} 
+}
+
+
+
+
+// Social media buttons
+.sm-btn{
+    margin: 6px 0 0 6px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0.1em 0.1em 0em gray;
+            box-shadow: 0.1em 0.1em 0em gray;
+    -webkit-filter: grayscale(90%);
+            filter: grayscale(90%); 
+    &:hover{
+        -webkit-animation: filter-animation 2s 1;
+                animation: filter-animation 2s 1;}
+    &:active{
+        -webkit-transform: scale(0.97);
+            -ms-transform: scale(0.97);
+                transform: scale(0.97);
+    }
+}
+
+
+// Language switch buttons
+.lang{
+    margin: 15px 15px 0 0;
+    border:0;
+    &:active{
+        border:0;
+        outline:none;
+        background:none;
+        -webkit-transform: scale(0.77);
+            -ms-transform: scale(0.77);
+                transform: scale(0.77);
+        cursor: pointer;
+    }
+    &:focus{
+        outline:none;
+        background:none;
+    }
+}
+
+// Navbar buttons 
+.btn-links{
+    
+    display: inline-block;
+    font-size: 1em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    bottom: 30px;
+    margin: 15px;
+    padding: 1em 2em;
+    height: auto;
+
+    color: $primary-color;
+    background-color: $secondary-color;
+    border:none;
+    -webkit-box-shadow: 0 4.5px $third-color;
+            box-shadow: 0 4.5px $third-color;
+    border-radius: 2px;;
+    
+    
+
+    &:focus{
+        outline:0;
+    }
+
+    &:before, &:after{
+        position: absolute;
+        content: '';
+        display: block;
+        width: 140%;
+        height: 100%;
+        left: -20%;
+        z-index: -1000;
+        -webkit-transition: all ease-in-out 0.3s;
+        -o-transition: all ease-in-out 0.3s;
+        transition: all ease-in-out 0.3s;
+        background-repeat: no-repeat;
+    }
+    &:before{
+        display: none;
+        top: -75%;
+        background-image: 
+        
+            -o-radial-gradient(circle, $primary-color 20%, transparent 40%),
+            -o-radial-gradient(circle, transparent 20%, $secondary-color 20%, transparent 70%),
+            -o-radial-gradient(circle, $primary-color 20%, transparent 20%),
+            -o-radial-gradient(circle, $secondary-color 20%, transparent 20%),
+            -o-radial-gradient(circle, transparent 10%, $primary-color 15%, transparent 20%),
+            -o-radial-gradient(circle, $primary-color 20%, transparent 20%),
+            -o-radial-gradient(circle, $secondary-color 20%, transparent 20%),
+            -o-radial-gradient(circle, $primary-color 20%, transparent 20%),
+            -o-radial-gradient(circle, $secondary-color 20%, transparent 20%);
+        background-image: 
+        
+            radial-gradient(circle, $primary-color 20%, transparent 40%),
+            radial-gradient(circle, transparent 20%, $secondary-color 20%, transparent 70%),
+            radial-gradient(circle, $primary-color 20%, transparent 20%),
+            radial-gradient(circle, $secondary-color 20%, transparent 20%),
+            radial-gradient(circle, transparent 10%, $primary-color 15%, transparent 20%),
+            radial-gradient(circle, $primary-color 20%, transparent 20%),
+            radial-gradient(circle, $secondary-color 20%, transparent 20%),
+            radial-gradient(circle, $primary-color 20%, transparent 20%),
+            radial-gradient(circle, $secondary-color 20%, transparent 20%);
+        
+            background-size: 
+                10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%,
+                15% 15%, 10% 10%, 18% 18%;
+    }
+
+    &:after {
+        display: none;
+        bottom: -75%;
+        background-image: 
+            -o-radial-gradient(circle, $secondary-color 20%, transparent 20%),
+            -o-radial-gradient(circle, $primary-color 20%, transparent 20%),
+            -o-radial-gradient(circle, transparent 10%, $primary-color 15%, transparent 20%),
+            -o-radial-gradient(circle, $secondary-color 20%, transparent 20%),
+            -o-radial-gradient(circle, $primary-color 20%, transparent 20%),
+            -o-radial-gradient(circle, $secondary-color 20%, transparent 20%),
+            -o-radial-gradient(circle, $primary-color 20%, transparent 20%);
+        background-image: 
+            radial-gradient(circle, $secondary-color 20%, transparent 20%),
+            radial-gradient(circle, $primary-color 20%, transparent 20%),
+            radial-gradient(circle, transparent 10%, $primary-color 15%, transparent 20%),
+            radial-gradient(circle, $secondary-color 20%, transparent 20%),
+            radial-gradient(circle, $primary-color 20%, transparent 20%),
+            radial-gradient(circle, $secondary-color 20%, transparent 20%),
+            radial-gradient(circle, $primary-color 20%, transparent 20%);
+          background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%,
+            20% 20%;
+      }
+
+  
+    &:hover{
+        opacity: 0.66;
+        -webkit-transition:all 0.3s ease-in;
+        -o-transition:all 0.3s ease-in;
+        transition:all 0.3s ease-in;
+    }        
+
+
+    &:active{
+        -webkit-box-shadow:0 1px $primary-color;
+                box-shadow:0 1px $primary-color;
+        -webkit-transform: translateY(3.2px);
+            -ms-transform: translateY(3.2px);
+                transform: translateY(3.2px);
+        -webkit-transition: all 0.1s;
+        -o-transition: all 0.1s;
+        transition: all 0.1s;
+    }
+    
+      &.animate {
+        &:before {
+          display: block;
+          -webkit-animation: topFireworks ease-in-out 0.65s forwards;
+                  animation: topFireworks ease-in-out 0.65s forwards;
+         
+        }
+        &:after {
+          display: block;
+          -webkit-animation: bottomFireworks ease-in-out 0.65s forwards;
+                  animation: bottomFireworks ease-in-out 0.65s forwards;
+         
+        }
+      }
+
+}
+
+
+// Navbar firework animations.
+@keyframes topFireworks {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  
+@-webkit-keyframes bottomFireworks {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+  
+@keyframes bottomFireworks {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+
+
+
+.menu-ctr{
+    visibility: hidden;
+    &.showWheel{
+        .mbline{
+            
+            //Line 1 go up
+            &:nth-child(1) {
+                -webkit-transform: translateY(-20px);
+                    -ms-transform: translateY(-20px);
+                        transform: translateY(-20px);
+                opacity: 0;
+                -webkit-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out; 
+                
+                
+            }
+            //Line 2 vanish
+            &:nth-child(2){
+                position: relative;
+                border: none;
+                -webkit-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+                
+                &:before{
+                    content: url(../../dist/img/wheel.png);
+                    position: absolute;
+                    -webkit-animation: rotation 0.3s 0.5 linear;
+                            animation: rotation 0.3s 0.5 linear;
+                    // Find how to center before elem in relation to its parent. 
+                    // The below is not reallly mathematically sound.
+                    margin-top: -13px; // 1/2 of nth-child(2)'s width
+                    top: -50%;
+                    left: -15%;
+                }
+            }
+            //Line 3 go down
+            &:nth-child(3){
+                -webkit-transform: translateY(20px);
+                    -ms-transform: translateY(20px);
+                        transform: translateY(20px);
+                opacity: 0;
+                -webkit-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+
+@-webkit-keyframes rotation{
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
+    }
+}
+
+
+@keyframes rotation{
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
+    }
+}
+
+
+
+
+
+
+

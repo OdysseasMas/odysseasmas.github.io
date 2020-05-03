@@ -1,0 +1,67 @@
+$primary-color: #F2EBD4; // Eggshell 
+$secondary-color: #354863; // Indigo dye for take a tour
+$third-color:#212422; // eery black
+
+/* 
+*   In home page (index.html)
+*/
+.slideshow{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    min-width: 100%;
+    .slide{
+        max-width: 100%;
+        opacity: 0.88;
+        height: 60vh;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+    }
+}
+
+.empty{
+    background: $primary-color;
+    min-width: 405px;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    opacity: 0.4;    
+}
+
+.intro-ctr{
+    font-size:  1vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 70;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+
+    h1{
+        white-space: nowrap;
+        text-transform: uppercase;
+        color: $secondary-color;
+    }
+}
+
+
+
+/* 
+*   End of home page (index.html)
+*/
+
+
+
+
+
+@keyframes go{
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}

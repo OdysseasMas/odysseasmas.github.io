@@ -1,0 +1,233 @@
+//  when width is <= 1200px
+@media only screen and (max-width: 1200px){
+
+    // Home page (index.html)
+    .btn-links{
+        display: none;
+    }
+
+    .menu-ctr{
+        visibility: visible;
+    }
+
+    .intro-ctr{
+        font-size: 2vw;
+    }
+
+    .menu{
+        width: 25%;
+    }
+    // Take a tour page
+
+
+   
+}
+
+@media only screen and (max-width: 1024px){
+    //Home Page (index.html)
+    .slide-ctr{
+        display: none;
+    }
+    .empty{
+        width: 100%;
+        height: 70vh;
+    }
+
+    #bio-one,#bio-two{
+        height: 34vh !important;
+        width: 34vh !important;
+
+    }
+
+    .bio-greg,.bio-john{
+        width: 80% !important;
+         p{
+             font-size: 1.2em !important;
+             
+         }
+     }
+}
+
+
+// When width <= 980px 
+@media only screen and (max-width: 900px){
+    .gallery-ctr{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        .gpic{
+            width: 100%;
+        }
+      }
+
+    .info-wrapper{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+
+    // take a tour page from down here
+
+    // video bar alterations
+    .welcome-ctr{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 3em;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+    
+        .iframe-ctr{
+            width: 75vw;
+            height: 75vw;
+            position: relative;
+            margin-bottom: 2em;
+        }
+    
+        .msg-ctr{
+            width: 75vw;
+            height: 75vw;
+        }
+    
+        .ifr{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .msg-box{
+       
+        padding: 0;
+        width: 70% !important;
+        height: 70% !important;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 1em;
+       
+       
+    }
+
+    .box-ctr{
+        p{
+            font-size: 2vw !important;
+        }
+    }
+
+    .catalogue-ctr{
+        height: 78vw;
+    }
+
+}
+    
+    
+
+
+
+// When width <= 768px
+@media only screen and (max-width: 768px){
+    // Home page 
+    .menu{
+        width: 35%;
+    }
+
+    .catalogue-ctr{
+        height: 84vw;
+    }
+
+    // Who we are
+
+    .bio-greg,.bio-john{
+        height: 40vh !important;
+        p{
+            font-size: 0.5em !important;
+        }
+    }
+
+    // Contact us
+
+    .cnt-info{
+        height: 35vh !important;
+        width: 90vw !important;
+    }
+}
+
+// When width <= 600px
+@media only screen and (max-width: 768px){
+    .catalogue-ctr{
+        height: 90vw;
+    }
+
+     // Who we are
+    .pics-wrapper{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
+        -webkit-box-align:center ;
+            -ms-flex-align:center ;
+                align-items:center ;
+        height: 90vh !important;
+    }
+
+    .bio-greg,.bio-john{
+       width: 60% !important;
+        p{
+            font-size: 1.2em !important;
+            color: $primary-color;
+        }
+    }
+}
+
+// When width <= 400px
+
+@media only screen and (max-width: 400px){
+    .bio-greg,.bio-john{
+        width: 90% !important;
+         p{
+            font-size: 1em !important;
+             
+         }
+     }
+}
+
+//1426 600
+// hides the pictures 
+@media only screen and (max-height: 600px){
+    .slide-ctr{
+        display: none;
+    }
+}
