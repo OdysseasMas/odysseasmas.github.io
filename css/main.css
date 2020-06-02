@@ -554,8 +554,8 @@ header {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
     .welcome-ctr .iframe-ctr {
-      width: 75vw;
-      height: 75vw;
+      width: 75vw !important;
+      height: 75vw !important;
       position: relative;
       margin-bottom: 2em; }
     .welcome-ctr .msg-ctr {

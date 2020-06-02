@@ -1,5 +1,5 @@
 
-var option1  = ["Welcome!", "Join our boat tour.", "Explore new places.", "Have fun"]
+var option1  = ["Welcome!", "Join our boat tour.", "Explore new places.", "Have fun."]
 var option2 = ["Click us","Or scroll down","This"," is"," us"," Argo Cruising"];
 var option_used;
 // This uses a typewriter plugin library. Credits to @: https://safi.me.uk/typewriterjs/
