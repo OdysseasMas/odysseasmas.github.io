@@ -671,6 +671,22 @@ header {
     align-items: center; }
     .options-ctr a {
       margin: 0.5em; }
+  .board-ctr {
+    flex-direction: column;
+    align-items: center; }
+  .reverse {
+    flex-direction: column-reverse;
+    align-items: center; }
+  .box-ctr {
+    width: 50vw !important;
+    height: 50vw !important; }
+    .box-ctr p {
+      font-size: 6.5vw !important; }
+  .rect-ctr {
+    width: 80vw !important;
+    height: 50vw !important; }
+    .rect-ctr p {
+      font-size: 3.5vw !important; }
   .bio-greg, .bio-john {
     width: 90% !important; }
     .bio-greg p, .bio-john p {
