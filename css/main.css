@@ -498,7 +498,47 @@ header {
   .intro-ctr {
     font-size: 2vw; }
   .menu {
-    width: 25%; } }
+    width: 25%; }
+  .welcome-ctr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 3em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .welcome-ctr .iframe-ctr {
+      width: 75vw !important;
+      height: 50vw !important;
+      position: relative;
+      margin-bottom: 2em; }
+    .welcome-ctr .msg-ctr {
+      margin: 2em;
+      display: flex;
+      align-items: center; }
+    .welcome-ctr .msg-box {
+      height: 50vw !important;
+      width: 75vw !important;
+      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .welcome-ctr .msg-box p {
+        font-size: 8vw !important;
+        overflow-wrap: break-word; }
+    .welcome-ctr .ifr {
+      position: absolute;
+      width: 100%;
+      height: 100%; } }
 
 @media only screen and (max-width: 1024px) {
   .slide-ctr {
@@ -560,15 +600,15 @@ header {
       margin-bottom: 2em; }
     .welcome-ctr .msg-ctr {
       width: 75vw;
-      height: 75vw; }
+      height: 75vw;
+      margin: 2em; }
     .welcome-ctr .ifr {
       position: absolute;
       width: 100%;
       height: 100%; }
   .msg-box {
-    padding: 0;
-    width: 70% !important;
-    height: 70% !important;
+    width: 90% !important;
+    height: 100% !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -579,6 +619,8 @@ header {
     -ms-flex-align: center;
     align-items: center;
     padding: 1em; }
+    .msg-box p {
+      font-size: 7vw !important; }
   .box-ctr p {
     font-size: 2vw !important; }
   .catalogue-ctr {
@@ -618,7 +660,17 @@ header {
       font-size: 1.2em !important;
       color: #F2EBD4; } }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
+  .options-ctr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .options-ctr a {
+      margin: 0.5em; }
   .bio-greg, .bio-john {
     width: 90% !important; }
     .bio-greg p, .bio-john p {
