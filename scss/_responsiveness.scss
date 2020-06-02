@@ -17,8 +17,64 @@
     .menu{
         width: 25%;
     }
-    // Take a tour page
+    
+    // Take a tour page from down here
 
+    // video bar alterations
+    .welcome-ctr{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 3em;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+    
+        .iframe-ctr{
+            width: 75vw !important;
+            height: 50vw !important;
+            position: relative;
+            margin-bottom: 2em;
+        }
+    
+        .msg-ctr{
+            margin: 2em;
+            display: flex;
+            align-items: center;
+        }
+
+        .msg-box{
+            height: 50vw !important;
+            width: 75vw !important;
+            display: flex;
+            
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+                    display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+                    align-items: center;
+          
+            p{
+                font-size: 8vw !important;
+                overflow-wrap: break-word;
+               
+            }
+        }
+    
+        .ifr{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
 
 
 
@@ -112,6 +168,7 @@
         .msg-ctr{
             width: 75vw;
             height: 75vw;
+            margin: 2em;
         }
     
         .ifr{
@@ -123,9 +180,8 @@
 
     .msg-box{
        
-        padding: 0;
-        width: 70% !important;
-        height: 70% !important;
+        width: 90% !important;
+        height: 100% !important;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -136,6 +192,10 @@
             -ms-flex-align: center;
                 align-items: center;
         padding: 1em;
+
+        p{
+            font-size: 7vw !important;
+        }
        
        
     }
@@ -214,9 +274,31 @@
     }
 }
 
-// When width <= 400px
+// When width <= 400px (changed to 480)
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 480px){
+
+    // Take a tour
+    .options-ctr{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        a {
+            margin: 0.5em;
+        }
+    }
+   
+
+
+
+
+
+    // Who we are
     .bio-greg,.bio-john{
         width: 90% !important;
          p{
