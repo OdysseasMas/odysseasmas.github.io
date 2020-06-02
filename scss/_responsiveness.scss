@@ -20,6 +20,8 @@
     // Take a tour page
 
 
+
+
    
 }
 
@@ -101,8 +103,8 @@
                 box-sizing: border-box;
     
         .iframe-ctr{
-            width: 75vw;
-            height: 75vw;
+            width: 75vw !important;
+            height: 75vw !important;
             position: relative;
             margin-bottom: 2em;
         }
