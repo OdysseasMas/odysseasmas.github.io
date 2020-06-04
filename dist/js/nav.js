@@ -69,7 +69,11 @@ function toggleMenu(){
   }
 }
 
-
+/** Handles language switching.  
+ *  Stores the current language in local storage.
+ *  
+ *  
+ */ 
 
 var gr_selector = document.querySelectorAll('.gre');
 var en_selector = document.querySelectorAll('.eng');
