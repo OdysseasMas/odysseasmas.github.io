@@ -90,8 +90,7 @@ function toggleLanguage(lang_toggle){
       let item = en_selector[i];
       item.classList.add('ehide');
       pragma.classList.remove('ghide');
-    }   
-  } else {
+    }  else {
     
     for (let i = 0; i < gr_selector.length; i++){
       let pragma = gr_selector[i];
