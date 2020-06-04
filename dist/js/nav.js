@@ -69,6 +69,48 @@ function toggleMenu(){
   }
 }
 
+
+
+var gr_selector = document.querySelectorAll('.gre');
+var en_selector = document.querySelectorAll('.eng');
+var listen_greek = document.querySelector('#gre');
+var listen_english = document.querySelector('#eng')
+
+// true = greek, false = english
+var current_lang = false;
+
+listen_greek.addEventListener('click', function() {toggleLanguage(true)});
+listen_english.addEventListener('click', function() {toggleLanguage(false)})
+
+function toggleLanguage(lang_toggle){
+  if (lang_toggle) 
+    // could be en_selector.length as they should be the same
+    for (let i = 0; i < gr_selector.length; i++){
+      let pragma = gr_selector[i];
+      let item = en_selector[i];
+      item.classList.add('ehide');
+      pragma.classList.remove('ghide');
+    }   
+  } else {
+    
+    for (let i = 0; i < gr_selector.length; i++){
+      let pragma = gr_selector[i];
+      let item = en_selector[i];
+      pragma.classList.add('ghide');
+      item.classList.remove('ehide');  
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
 /** Keeps track of the window size in order to
  *  reset the menu button in case the user 
  *  resizes the window.

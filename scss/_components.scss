@@ -40,28 +40,33 @@ $third-color:#212422; // eery black
 
 
 // Language switch buttons
-.lang{
-    margin: 15px 15px 0 0;
-    border:0;
-    &:active{
-        border:0;
-        outline:none;
-        background:none;
-        -webkit-transform: scale(0.77);
-            -ms-transform: scale(0.77);
-                transform: scale(0.77);
-        cursor: pointer;
+.trans_button{
+    cursor: pointer;
+    &:hover{
+        opacity: 0.67;
     }
-    &:focus{
-        outline:none;
-        background:none;
-    }
+    
+}
+// .eng{
+//     display: none;
+// }
+
+.ghide{
+    display: none;
+}
+
+.ehide{
+    display: none;
+}
+
+.gshow{
+    color: green;
 }
 
 // Navbar buttons 
 .btn-links{
     
-    display: inline-block;
+    // display: inline-block; removed in language switching
     font-size: 1em;
     text-transform: uppercase;
     white-space: nowrap;
@@ -70,7 +75,8 @@ $third-color:#212422; // eery black
     bottom: 30px;
     margin: 15px;
     padding: 1em 2em;
-    height: auto;
+    // height: auto; language switching
+    
 
     color: $primary-color;
     background-color: $secondary-color;
@@ -78,6 +84,19 @@ $third-color:#212422; // eery black
     -webkit-box-shadow: 0 4.5px $third-color;
             box-shadow: 0 4.5px $third-color;
     border-radius: 2px;;
+
+    // Working on language switching
+    height: 50px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+
+
+    // End of language switching
     
     
 
