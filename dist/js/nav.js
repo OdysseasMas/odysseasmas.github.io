@@ -77,21 +77,24 @@ var listen_greek = document.querySelector('#gre');
 var listen_english = document.querySelector('#eng')
 
 // true = greek, false = english
-var current_lang = false;
 
 listen_greek.addEventListener('click', function() {toggleLanguage(true)});
 listen_english.addEventListener('click', function() {toggleLanguage(false)})
 
+window.onload = function() {toggleLanguage(localStorage.getItem('current_language'))};
+
 function toggleLanguage(lang_toggle){
-  if (lang_toggle) 
+  if (lang_toggle == true || lang_toggle == 'gre')  {
+    localStorage.setItem("current_language", 'gre');
     // could be en_selector.length as they should be the same
     for (let i = 0; i < gr_selector.length; i++){
       let pragma = gr_selector[i];
       let item = en_selector[i];
       item.classList.add('ehide');
       pragma.classList.remove('ghide');
-    }  else {
-    
+    }  
+  } else {
+    localStorage.setItem("current_language", 'eng');
     for (let i = 0; i < gr_selector.length; i++){
       let pragma = gr_selector[i];
       let item = en_selector[i];
