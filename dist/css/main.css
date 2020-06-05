@@ -1078,6 +1078,9 @@ header {
       color: #F2EBD4; } }
 
 @media only screen and (max-width: 480px) {
+  .welcome-ctr .msg-ctr .msg-box .welcome-text {
+    width: 58vw;
+    font-size: 1em; }
   .bio-greg, .bio-john {
     width: 90% !important; }
     .bio-greg p, .bio-john p {

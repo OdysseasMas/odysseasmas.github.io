@@ -231,7 +231,8 @@
     // .intro-ctr{
     //     font-size: 5vw;
     // }
-
+    
+    
 
     .catalogue-ctr{
         height: 90vw;
@@ -264,6 +265,11 @@
 // When width <= 400px (changed to 480)
 
 @media only screen and (max-width: 480px){
+
+    .welcome-ctr .msg-ctr .msg-box .welcome-text{
+        width: 58vw;
+        font-size: 1em;
+    }
 
      // Who we are
     .bio-greg,.bio-john{
