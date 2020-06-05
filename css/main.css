@@ -1078,6 +1078,8 @@ header {
       color: #F2EBD4; } }
 
 @media only screen and (max-width: 480px) {
+  body .welcome-ctr .iframe-ctr {
+    width: 100vw; }
   .welcome-ctr .msg-ctr .msg-box .welcome-text {
     width: 58vw;
     font-size: 1em; }
