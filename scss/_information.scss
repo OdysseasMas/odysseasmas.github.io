@@ -13,7 +13,7 @@ $third-color:#212422; // eery black
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    // margin: 3em;
+    
     
     
     .iframe-ctr{
@@ -438,7 +438,7 @@ $third-color:#212422; // eery black
             color: $secondary-color;
             margin: 1em;
             font-family: 'Cabin', sans-serif;
-            font-size: 1.65em;            
+            font-size: 1.35em;            
         }     
     }
 
@@ -459,7 +459,8 @@ $third-color:#212422; // eery black
                 align-items: center;
         p{
             color: $primary-color;
-            font-size: 1.8vw;
+            font-size: 1em;
+            line-height: 3em;
             margin: 2em;
         }
 

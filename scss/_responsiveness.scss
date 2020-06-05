@@ -1,7 +1,6 @@
-//  when width is <= 1200px
+//  Screen width is < 1200px
 @media only screen and (max-width: 1200px){
-
-    // Home page (index.html)
+    // Home page 
     .btn-links{
         display: none;
        
@@ -19,8 +18,8 @@
         width: 25%;
     }
     
-    // Take a tour page from down here
 
+    // Take a Tour
     .welcome-ctr{
 
         display: -webkit-box;
@@ -53,26 +52,24 @@
 
                 .welcome-text{
                     width: 40vw;
-                }
-
-                // .start{
-                //     align-self: flex-start;
-                // }
-
-                .end{
-                    align-self: flex-end;
-                }
-
-    
+                }    
                 .tt, .ti{
                     height: 1em;
                 }
 
             }                                    
-        }       
+        }   
     }   
+
+    .board-ctr .rect-ctr p{
+        line-height: 2.5em;
+    }
 }
 
+
+
+
+// Screen width <  1024px
 @media only screen and (max-width: 1024px){
     //Home Page (index.html)
     .slide-ctr{
@@ -95,12 +92,21 @@
              font-size: 1.2em !important;
              
          }
-     }
+    }
+
+
+    // Take a tour
+    .board-wrapper .board-ctr .rect-ctr p{
+        line-height: 1.6em;
+    }
 }
 
 
-// When width <= 980px 
+
+
+// Screen width < 900px 
 @media only screen and (max-width: 900px){
+    // Home
     .gallery-ctr{
         display: -webkit-box;
         display: -ms-flexbox;
@@ -133,7 +139,15 @@
 
 
     // Take a Tour
+    // Using ids for higher specificity
+    #one {
+        width: 30vw;
+        height: 30vw;
+    }
 
+    #six{
+        height: 30vw;
+    }
 
 }
     
@@ -148,19 +162,13 @@
         width: 35%;
     }
 
+
+    // Take a tour
     .catalogue-ctr{
         height: 84vw;
     }
 
-     // Take a tour
-
-  
-    
-    
-
-
-
-     .options-ctr{
+    .options-ctr{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -186,29 +194,24 @@
         align-items: center;
     }
 
-    .box-ctr{
-        width: 50vw !important;
-        height: 50vw !important;
+    #one{
+        width: 50vw;
+        height: 50vw;
 
-        p {
-            font-size: 6.5vw !important;
-        }
     }
 
-    .rect-ctr{
-        width: 80vw !important;
-        height: 50vw !important;
+    #six{
+        width: 100vw;
+        height: 70vw;
 
-        p {
-            font-size: 3.5vw !important;
+        p{
+            line-height: 1.5em;
+            font-size: 1em;
         }
     }
-   
-
 
 
     // Who we are
-
     .bio-greg,.bio-john{
         height: 40vh !important;
         p{
@@ -216,8 +219,8 @@
         }
     }
 
-    // Contact us
 
+    // Contact us
     .cnt-info{
         height: 35vh !important;
         width: 90vw !important;
@@ -226,19 +229,34 @@
 
 // When width <= 768px
 @media only screen and (max-width: 768px){
-
-    // Home
-    // .intro-ctr{
-    //     font-size: 5vw;
-    // }
-    
-    
-
+    // Take a tour
     .catalogue-ctr{
         height: 90vw;
     }
+    #one{
+        width: 50vw;
+        height: 50vw;
 
-     // Who we are
+        p {
+            font-size: 2em;
+        }
+
+    }
+
+    #six{
+        width: 100vw;
+        height: 70vw;
+
+        p{
+            line-height: 2em;
+            font-size: 1.5em;
+        }
+    }
+
+
+
+
+    // Who we are
     .pics-wrapper{
         display: -webkit-box;
         display: -ms-flexbox;
@@ -262,9 +280,12 @@
     }
 }
 
-// When width <= 400px (changed to 480)
 
+
+
+// When width <= 400px (changed to 480)
 @media only screen and (max-width: 480px){
+    // Take a tour
     body .welcome-ctr .iframe-ctr{
         width: 100vw;
     }
@@ -274,19 +295,40 @@
         font-size: 1em;
     }
 
-     // Who we are
+    #one{
+        width: 50vw;
+        height: 50vw;
+
+        p {
+            font-size: 1.7em;
+        }
+
+    }
+
+    #six{
+        width: 100vw;
+        height: 70vw;
+
+        p{
+            line-height: 1.5em;
+            font-size: 1em;
+        }
+    }
+
+
+    // Who we are
     .bio-greg,.bio-john{
         width: 90% !important;
          p{
             font-size: 1em !important;
              
-         }
-     }
-
-    
+        }
+    }
 }
 
-//1426 600
+
+
+
 // hides the pictures 
 @media only screen and (max-height: 600px){
     .slide-ctr{

@@ -793,7 +793,7 @@ header {
       color: #354863;
       margin: 1em;
       font-family: 'Cabin', sans-serif;
-      font-size: 1.65em; }
+      font-size: 1.35em; }
   .board-ctr .rect-ctr {
     margin: 1em;
     width: 50vw;
@@ -810,7 +810,8 @@ header {
     align-items: center; }
     .board-ctr .rect-ctr p {
       color: #F2EBD4;
-      font-size: 1.8vw;
+      font-size: 1em;
+      line-height: 3em;
       margin: 2em; }
 
 .wwa-ctr {
@@ -972,10 +973,10 @@ header {
       width: 62.5vw; }
       .welcome-ctr .msg-ctr .msg-box .welcome-text {
         width: 40vw; }
-      .welcome-ctr .msg-ctr .msg-box .end {
-        align-self: flex-end; }
       .welcome-ctr .msg-ctr .msg-box .tt, .welcome-ctr .msg-ctr .msg-box .ti {
-        height: 1em; } }
+        height: 1em; }
+  .board-ctr .rect-ctr p {
+    line-height: 2.5em; } }
 
 @media only screen and (max-width: 1024px) {
   .slide-ctr {
@@ -989,7 +990,9 @@ header {
   .bio-greg, .bio-john {
     width: 80% !important; }
     .bio-greg p, .bio-john p {
-      font-size: 1.2em !important; } }
+      font-size: 1.2em !important; }
+  .board-wrapper .board-ctr .rect-ctr p {
+    line-height: 1.6em; } }
 
 @media only screen and (max-width: 900px) {
   .gallery-ctr {
@@ -1015,7 +1018,12 @@ header {
     flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; } }
+    align-items: center; }
+  #one {
+    width: 30vw;
+    height: 30vw; }
+  #six {
+    height: 30vw; } }
 
 @media only screen and (max-width: 768px) {
   .menu {
@@ -1038,16 +1046,15 @@ header {
   .reverse {
     flex-direction: column-reverse;
     align-items: center; }
-  .box-ctr {
-    width: 50vw !important;
-    height: 50vw !important; }
-    .box-ctr p {
-      font-size: 6.5vw !important; }
-  .rect-ctr {
-    width: 80vw !important;
-    height: 50vw !important; }
-    .rect-ctr p {
-      font-size: 3.5vw !important; }
+  #one {
+    width: 50vw;
+    height: 50vw; }
+  #six {
+    width: 100vw;
+    height: 70vw; }
+    #six p {
+      line-height: 1.5em;
+      font-size: 1em; }
   .bio-greg, .bio-john {
     height: 40vh !important; }
     .bio-greg p, .bio-john p {
@@ -1059,6 +1066,17 @@ header {
 @media only screen and (max-width: 768px) {
   .catalogue-ctr {
     height: 90vw; }
+  #one {
+    width: 50vw;
+    height: 50vw; }
+    #one p {
+      font-size: 2em; }
+  #six {
+    width: 100vw;
+    height: 70vw; }
+    #six p {
+      line-height: 2em;
+      font-size: 1.5em; }
   .pics-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1083,6 +1101,17 @@ header {
   .welcome-ctr .msg-ctr .msg-box .welcome-text {
     width: 58vw;
     font-size: 1em; }
+  #one {
+    width: 50vw;
+    height: 50vw; }
+    #one p {
+      font-size: 1.7em; }
+  #six {
+    width: 100vw;
+    height: 70vw; }
+    #six p {
+      line-height: 1.5em;
+      font-size: 1em; }
   .bio-greg, .bio-john {
     width: 90% !important; }
     .bio-greg p, .bio-john p {
