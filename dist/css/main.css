@@ -40,6 +40,10 @@
   .trans_button:hover {
     opacity: 0.67; }
 
+.select {
+  border: 2px solid green;
+  border-radius: 50%; }
+
 .ghide {
   display: none; }
 
