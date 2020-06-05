@@ -42,8 +42,13 @@ $third-color:#212422; // eery black
 // Language switch buttons
 .trans_button{
     cursor: pointer;
+     
     &:hover{
         opacity: 0.67;
+    }
+
+    .flag-gre,.flag-eng{
+        margin: 6px 6px 0 0;
     }
     
 }
