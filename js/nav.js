@@ -82,8 +82,8 @@ var listen_english = document.querySelector('#eng')
 
 // true = greek, false = english
 
-listen_greek.addEventListener('click', function() {toggleLanguage(true)});
-listen_english.addEventListener('click', function() {toggleLanguage(false)})
+listen_greek.addEventListener('click', function() {toggleLanguage(true); highlight();});
+listen_english.addEventListener('click', function() {toggleLanguage(false); highlight();})
 
 window.onload = function() {toggleLanguage(localStorage.getItem('current_language'))};
 
@@ -107,6 +107,21 @@ function toggleLanguage(lang_toggle){
     }
   }
 }
+
+
+function highlight(){
+  var sel_eng = document.querySelector('.flag-eng');
+  var sel_gre = document.querySelector('.flag-gre');
+  if (localStorage.getItem("current_language") == 'eng'){
+    sel_gre.classList.remove('select');
+    sel_eng.classList.add('select');
+  } else {
+    sel_eng.classList.remove('select');
+    sel_gre.classList.add('select');
+  } 
+}
+
+
 
 
 
