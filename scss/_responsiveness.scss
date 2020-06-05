@@ -4,6 +4,7 @@
     // Home page (index.html)
     .btn-links{
         display: none;
+       
     }
 
     .menu-ctr{
@@ -20,8 +21,8 @@
     
     // Take a tour page from down here
 
-    // video bar alterations
     .welcome-ctr{
+
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -36,49 +37,40 @@
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
     
-        .iframe-ctr{
-            width: 75vw !important;
-            height: 50vw !important;
-            position: relative;
-            margin-bottom: 2em;
-        }
-    
-        .msg-ctr{
-            margin: 2em;
-            display: flex;
-            align-items: center;
-        }
-
-        .msg-box{
-            height: 50vw !important;
-            width: 75vw !important;
-            display: flex;
-            
-
-            display: -webkit-box;
-            display: -ms-flexbox;
-                    display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-                    align-items: center;
-          
-            p{
-                font-size: 8vw !important;
-                overflow-wrap: break-word;
-               
-            }
-        }
-    
+      
         .ifr{
             position: absolute;
             width: 100%;
             height: 100%;
-        }
-    }
+        }   
 
 
 
-   
+        .msg-ctr{
+            width: 62.5vw;
+
+            .msg-box{
+
+                .welcome-text{
+                    width: 40vw;
+                }
+
+                // .start{
+                //     align-self: flex-start;
+                // }
+
+                .end{
+                    align-self: flex-end;
+                }
+
+    
+                .tt, .ti{
+                    height: 1em;
+                }
+
+            }                                    
+        }       
+    }   
 }
 
 @media only screen and (max-width: 1024px){
@@ -140,75 +132,8 @@
     }
 
 
-    // take a tour page from down here
+    // Take a Tour
 
-    // video bar alterations
-    .welcome-ctr{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        margin: 3em;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-    
-        .iframe-ctr{
-            width: 75vw !important;
-            height: 125vw !important;
-            position: relative;
-            margin-bottom: 2em;
-        }
-    
-        .msg-ctr{
-            width: 75vw;
-            height: 75vw;
-            margin: 2em;
-        }
-    
-        .ifr{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    .msg-box{
-       
-        width: 90% !important;
-        height: 100% !important;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        padding: 1em;
-
-        p{
-            font-size: 7vw !important;
-        }
-       
-       
-    }
-
-    .box-ctr{
-        p{
-            font-size: 2vw !important;
-        }
-    }
-
-    .catalogue-ctr{
-        height: 78vw;
-    }
 
 }
     
@@ -227,59 +152,15 @@
         height: 84vw;
     }
 
-    // Who we are
+     // Take a tour
 
-    .bio-greg,.bio-john{
-        height: 40vh !important;
-        p{
-            font-size: 0.5em !important;
-        }
-    }
+  
+    
+    
 
-    // Contact us
 
-    .cnt-info{
-        height: 35vh !important;
-        width: 90vw !important;
-    }
-}
 
-// When width <= 600px
-@media only screen and (max-width: 768px){
-    .catalogue-ctr{
-        height: 90vw;
-    }
-
-     // Who we are
-    .pics-wrapper{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient:vertical;
-        -webkit-box-direction:normal;
-            -ms-flex-direction:column;
-                flex-direction:column;
-        -webkit-box-align:center ;
-            -ms-flex-align:center ;
-                align-items:center ;
-        height: 90vh !important;
-    }
-
-    .bio-greg,.bio-john{
-       width: 60% !important;
-        p{
-            font-size: 1.2em !important;
-            color: $primary-color;
-        }
-    }
-}
-
-// When width <= 400px (changed to 480)
-
-@media only screen and (max-width: 480px){
-
-    // Take a tour
-    .options-ctr{
+     .options-ctr{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -288,9 +169,11 @@
         -ms-flex-align: center;
         align-items: center;
 
-        a {
-            margin: 0.5em;
-        }
+        
+    }
+
+    body .options-ctr a p{
+        font-size: 1.3em;
     }
 
     .board-ctr{
@@ -324,9 +207,65 @@
 
 
 
-
-
     // Who we are
+
+    .bio-greg,.bio-john{
+        height: 40vh !important;
+        p{
+            font-size: 0.5em !important;
+        }
+    }
+
+    // Contact us
+
+    .cnt-info{
+        height: 35vh !important;
+        width: 90vw !important;
+    }
+}
+
+// When width <= 768px
+@media only screen and (max-width: 768px){
+
+    // Home
+    // .intro-ctr{
+    //     font-size: 5vw;
+    // }
+
+
+    .catalogue-ctr{
+        height: 90vw;
+    }
+
+     // Who we are
+    .pics-wrapper{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
+        -webkit-box-align:center ;
+            -ms-flex-align:center ;
+                align-items:center ;
+        height: 90vh !important;
+    }
+
+    .bio-greg,.bio-john{
+       width: 60% !important;
+        p{
+            font-size: 1.2em !important;
+            color: $primary-color;
+        }
+    }
+}
+
+// When width <= 400px (changed to 480)
+
+@media only screen and (max-width: 480px){
+
+     // Who we are
     .bio-greg,.bio-john{
         width: 90% !important;
          p{
@@ -334,6 +273,8 @@
              
          }
      }
+
+    
 }
 
 //1426 600

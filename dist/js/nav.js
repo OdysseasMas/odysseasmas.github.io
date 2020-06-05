@@ -78,7 +78,7 @@ function toggleMenu(){
 var gr_selector = document.querySelectorAll('.gre');
 var en_selector = document.querySelectorAll('.eng');
 var listen_greek = document.querySelector('#gre');
-var listen_english = document.querySelector('#eng')
+var listen_english = document.querySelector('#eng');
 
 // true = greek, false = english
 

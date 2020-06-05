@@ -76,7 +76,6 @@ $third-color:#212422; // eery black
 // Navbar buttons 
 .btn-links{
     
-    // display: inline-block; removed in language switching
     font-size: 1em;
     text-transform: uppercase;
     white-space: nowrap;
@@ -85,7 +84,6 @@ $third-color:#212422; // eery black
     bottom: 30px;
     margin: 15px;
     padding: 1em 2em;
-    // height: auto; language switching
     
 
     color: $primary-color;
@@ -95,17 +93,12 @@ $third-color:#212422; // eery black
             box-shadow: 0 4.5px $third-color;
     border-radius: 2px;;
 
-    // Working on language switching
+    // language switching
     height: 50px;
     width: 170px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
-
-
-
     // End of language switching
     
     

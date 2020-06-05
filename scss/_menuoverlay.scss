@@ -54,31 +54,23 @@ $third-color:#212422; // Eerie black for overlay letters
             &:nth-child(1){
                 border-top: 2px solid $secondary-color;
             }
-            border-bottom: 2px solid $secondary-color;
-            
-            -webkit-box-flex: 0.07;
-            
-                -ms-flex-positive: 0.07;
-            
+            border-bottom: 2px solid $secondary-color;            
+            -webkit-box-flex: 0.07;            
+                -ms-flex-positive: 0.07;            
                     flex-grow: 0.07;
             position: relative;
-            text-align: center;
-            
-            
-            display: -webkit-box;
-            
-            
+            text-align: center;                        
+            display: -webkit-box;                        
             display: -ms-flexbox;
             
-             //second flexbox
+            //second flexbox
             display: flex;
             -webkit-box-pack: space-evenly;
                 -ms-flex-pack: space-evenly;
                     justify-content: space-evenly;
             -webkit-box-align: center;
                 -ms-flex-align: center;
-                    align-items: center;
-         
+                    align-items: center;         
         }
 
         .nav-link{
@@ -86,6 +78,10 @@ $third-color:#212422; // Eerie black for overlay letters
             text-transform: uppercase;
             list-style: none;
             text-decoration: none;
+
+            p{
+                font-family: 'Cabin', sans-serif;
+            }
         }   
     }
 }    
