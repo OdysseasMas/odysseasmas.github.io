@@ -203,8 +203,11 @@
 html, body {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
-  font-family: 'Futura'; }
+  overflow-x: hidden; }
+  html .eng, body .eng {
+    font-family: 'Raleway', sans-serif; }
+  html .gre, body .gre {
+    font-family: 'Jura', sans-serif; }
 
 header {
   min-height: 23vh; }
@@ -360,6 +363,8 @@ header {
       text-transform: uppercase;
       list-style: none;
       text-decoration: none; }
+      .menu .menu-nav .nav-link p {
+        font-family: 'Cabin', sans-serif; }
 
 .info-wrapper {
   display: -webkit-box;
@@ -405,10 +410,8 @@ header {
       opacity: 0.78; }
     .info-wrapper .text-ctr .text {
       margin: 2em;
-      line-height: 1.3em;
-      text-transform: uppercase;
+      line-height: 1.7em;
       color: #354863;
-      border: 2px solid #354863;
       padding: 1em;
       z-index: 40; }
 
@@ -499,212 +502,6 @@ header {
   to {
     width: 100%; } }
 
-@media only screen and (max-width: 1200px) {
-  .btn-links {
-    display: none; }
-  .menu-ctr {
-    visibility: visible; }
-  .intro-ctr {
-    font-size: 2vw; }
-  .menu {
-    width: 25%; }
-  .welcome-ctr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 3em;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-    .welcome-ctr .iframe-ctr {
-      width: 75vw !important;
-      height: 50vw !important;
-      position: relative;
-      margin-bottom: 2em; }
-    .welcome-ctr .msg-ctr {
-      margin: 2em;
-      display: flex;
-      align-items: center; }
-    .welcome-ctr .msg-box {
-      height: 50vw !important;
-      width: 75vw !important;
-      display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      .welcome-ctr .msg-box p {
-        font-size: 8vw !important;
-        overflow-wrap: break-word; }
-    .welcome-ctr .ifr {
-      position: absolute;
-      width: 100%;
-      height: 100%; } }
-
-@media only screen and (max-width: 1024px) {
-  .slide-ctr {
-    display: none; }
-  .empty {
-    width: 100%;
-    height: 70vh; }
-  #bio-one, #bio-two {
-    height: 34vh !important;
-    width: 34vh !important; }
-  .bio-greg, .bio-john {
-    width: 80% !important; }
-    .bio-greg p, .bio-john p {
-      font-size: 1.2em !important; } }
-
-@media only screen and (max-width: 900px) {
-  .gallery-ctr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .gallery-ctr .gpic {
-      width: 100%; }
-  .info-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .welcome-ctr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 3em;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-    .welcome-ctr .iframe-ctr {
-      width: 75vw !important;
-      height: 125vw !important;
-      position: relative;
-      margin-bottom: 2em; }
-    .welcome-ctr .msg-ctr {
-      width: 75vw;
-      height: 75vw;
-      margin: 2em; }
-    .welcome-ctr .ifr {
-      position: absolute;
-      width: 100%;
-      height: 100%; }
-  .msg-box {
-    width: 90% !important;
-    height: 100% !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 1em; }
-    .msg-box p {
-      font-size: 7vw !important; }
-  .box-ctr p {
-    font-size: 2vw !important; }
-  .catalogue-ctr {
-    height: 78vw; } }
-
-@media only screen and (max-width: 768px) {
-  .menu {
-    width: 35%; }
-  .catalogue-ctr {
-    height: 84vw; }
-  .bio-greg, .bio-john {
-    height: 40vh !important; }
-    .bio-greg p, .bio-john p {
-      font-size: 0.5em !important; }
-  .cnt-info {
-    height: 35vh !important;
-    width: 90vw !important; } }
-
-@media only screen and (max-width: 768px) {
-  .catalogue-ctr {
-    height: 90vw; }
-  .pics-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 90vh !important; }
-  .bio-greg, .bio-john {
-    width: 60% !important; }
-    .bio-greg p, .bio-john p {
-      font-size: 1.2em !important;
-      color: #F2EBD4; } }
-
-@media only screen and (max-width: 480px) {
-  .options-ctr {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .options-ctr a {
-      margin: 0.5em; }
-  .board-ctr {
-    flex-direction: column;
-    align-items: center; }
-  .reverse {
-    flex-direction: column-reverse;
-    align-items: center; }
-  .box-ctr {
-    width: 50vw !important;
-    height: 50vw !important; }
-    .box-ctr p {
-      font-size: 6.5vw !important; }
-  .rect-ctr {
-    width: 80vw !important;
-    height: 50vw !important; }
-    .rect-ctr p {
-      font-size: 3.5vw !important; }
-  .bio-greg, .bio-john {
-    width: 90% !important; }
-    .bio-greg p, .bio-john p {
-      font-size: 1em !important; } }
-
-@media only screen and (max-height: 600px) {
-  .slide-ctr {
-    display: none; } }
-
 /* 
 *   Start of take a tour page (takeatour.html)  NOT FIEX FOR VENDOR PREFIX FROM HERE AND DOWN
 */
@@ -713,36 +510,43 @@ header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
-  margin: 3em; }
+  justify-content: space-around; }
   .welcome-ctr .iframe-ctr {
-    width: 25vw;
-    height: 25vw;
+    width: 62.5vw;
+    height: 340px;
     position: relative; }
   .welcome-ctr .msg-ctr {
-    margin-left: 3em;
-    margin-right: 3em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    width: 37.5vw;
+    height: 340px; }
     .welcome-ctr .msg-ctr .msg-box {
-      background: #354863;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      -webkit-box-shadow: -29px -30px 0px 0px #F2EBD4;
-      box-shadow: -29px -30px 0px 0px #F2EBD4;
-      width: 50%;
+      width: 100%;
       height: 100%; }
       .welcome-ctr .msg-ctr .msg-box .welcome-text {
+        font-size: 1.5em;
+        margin: 0;
+        width: 20vw;
+        font-family: 'Cabin', sans-serif;
+        height: 3.5em; }
+      .welcome-ctr .msg-ctr .msg-box .end {
+        background-color: #F2EBD4;
+        align-self: flex-end; }
+      .welcome-ctr .msg-ctr .msg-box .start {
+        background-color: #354863;
+        align-self: flex-start; }
+      .welcome-ctr .msg-ctr .msg-box .ti {
+        color: #354863;
+        text-align: center; }
+      .welcome-ctr .msg-ctr .msg-box .tt {
         color: #F2EBD4;
-        font-size: 3vw;
-        padding: 0.3em; }
+        text-align: center; }
   .welcome-ctr .ifr {
     position: absolute;
     width: 100%;
@@ -770,24 +574,18 @@ header {
       cursor: pointer;
       text-decoration: none;
       position: relative;
-      color: #212422; }
-      .options-wrapper .options-ctr a:before {
-        position: absolute;
-        left: 50%;
-        top: 100%;
-        content: ""; }
-      .options-wrapper .options-ctr a:hover {
-        color: #354863; }
-        .options-wrapper .options-ctr a:hover:before {
-          border: 2px solid #354863;
-          -webkit-transform: scaleX(10);
-          -ms-transform: scaleX(10);
-          transform: scaleX(10);
-          -webkit-transition: -webkit-transform 0.5s ease-in;
-          transition: -webkit-transform 0.5s ease-in;
-          -o-transition: transform 0.5s ease-in;
-          transition: transform 0.5s ease-in;
-          transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in; }
+      color: #212422;
+      font-size: 0.9em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 3em; }
+      .options-wrapper .options-ctr a p {
+        margin: 0;
+        height: 50%; }
+        .options-wrapper .options-ctr a p:hover {
+          transition: all .3s ease-out;
+          box-shadow: 0 -1px 0 0 #F2EBD4 inset, 0 -3px 0 0 #354863 inset; }
 
 .board-wrapper {
   display: -webkit-box;
@@ -978,8 +776,8 @@ header {
   -ms-flex-line-pack: center;
   align-content: center; }
   .board-ctr .box-ctr {
-    width: 30vw;
-    height: 30vw;
+    width: 20vw;
+    height: 20vw;
     margin: 1em;
     background-color: #F2EBD4;
     display: -webkit-box;
@@ -994,11 +792,12 @@ header {
     .board-ctr .box-ctr p {
       color: #354863;
       margin: 1em;
-      font-size: 2em; }
+      font-family: 'Cabin', sans-serif;
+      font-size: 1.65em; }
   .board-ctr .rect-ctr {
     margin: 1em;
-    width: 60vw;
-    height: 30vw;
+    width: 50vw;
+    height: 20vw;
     background-color: #354863;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1011,7 +810,7 @@ header {
     align-items: center; }
     .board-ctr .rect-ctr p {
       color: #F2EBD4;
-      font-size: 2vw;
+      font-size: 1.8vw;
       margin: 2em; }
 
 .wwa-ctr {
@@ -1141,3 +940,149 @@ header {
     position: absolute;
     bottom: 0;
     right: 0; }
+
+@media only screen and (max-width: 1200px) {
+  .btn-links {
+    display: none; }
+  .menu-ctr {
+    visibility: visible; }
+  .intro-ctr {
+    font-size: 2vw; }
+  .menu {
+    width: 25%; }
+  .welcome-ctr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 3em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .welcome-ctr .ifr {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+    .welcome-ctr .msg-ctr {
+      width: 62.5vw; }
+      .welcome-ctr .msg-ctr .msg-box .welcome-text {
+        width: 40vw; }
+      .welcome-ctr .msg-ctr .msg-box .end {
+        align-self: flex-end; }
+      .welcome-ctr .msg-ctr .msg-box .tt, .welcome-ctr .msg-ctr .msg-box .ti {
+        height: 1em; } }
+
+@media only screen and (max-width: 1024px) {
+  .slide-ctr {
+    display: none; }
+  .empty {
+    width: 100%;
+    height: 70vh; }
+  #bio-one, #bio-two {
+    height: 34vh !important;
+    width: 34vh !important; }
+  .bio-greg, .bio-john {
+    width: 80% !important; }
+    .bio-greg p, .bio-john p {
+      font-size: 1.2em !important; } }
+
+@media only screen and (max-width: 900px) {
+  .gallery-ctr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .gallery-ctr .gpic {
+      width: 100%; }
+  .info-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    width: 35%; }
+  .catalogue-ctr {
+    height: 84vw; }
+  .options-ctr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  body .options-ctr a p {
+    font-size: 1.3em; }
+  .board-ctr {
+    flex-direction: column;
+    align-items: center; }
+  .reverse {
+    flex-direction: column-reverse;
+    align-items: center; }
+  .box-ctr {
+    width: 50vw !important;
+    height: 50vw !important; }
+    .box-ctr p {
+      font-size: 6.5vw !important; }
+  .rect-ctr {
+    width: 80vw !important;
+    height: 50vw !important; }
+    .rect-ctr p {
+      font-size: 3.5vw !important; }
+  .bio-greg, .bio-john {
+    height: 40vh !important; }
+    .bio-greg p, .bio-john p {
+      font-size: 0.5em !important; }
+  .cnt-info {
+    height: 35vh !important;
+    width: 90vw !important; } }
+
+@media only screen and (max-width: 768px) {
+  .catalogue-ctr {
+    height: 90vw; }
+  .pics-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 90vh !important; }
+  .bio-greg, .bio-john {
+    width: 60% !important; }
+    .bio-greg p, .bio-john p {
+      font-size: 1.2em !important;
+      color: #F2EBD4; } }
+
+@media only screen and (max-width: 480px) {
+  .bio-greg, .bio-john {
+    width: 90% !important; }
+    .bio-greg p, .bio-john p {
+      font-size: 1em !important; } }
+
+@media only screen and (max-height: 600px) {
+  .slide-ctr {
+    display: none; } }
