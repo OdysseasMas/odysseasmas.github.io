@@ -203,7 +203,8 @@
 html, body {
   padding: 0;
   margin: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
   html .eng, body .eng {
     font-family: 'Raleway', sans-serif; }
   html .gre, body .gre {
@@ -1108,7 +1109,7 @@ header {
       font-size: 1.7em; }
   #six {
     width: 100vw;
-    height: 70vw; }
+    height: 80vw; }
     #six p {
       line-height: 1.5em;
       font-size: 1em; }
