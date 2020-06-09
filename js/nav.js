@@ -82,8 +82,8 @@ var listen_english = document.querySelector('#eng');
 
 // true = greek, false = english
 
-listen_greek.addEventListener('click', function() {toggleLanguage(true); highlight();});
-listen_english.addEventListener('click', function() {toggleLanguage(false); highlight();})
+listen_greek.addEventListener('click', function() {toggleLanguage(true); highlight(); location.reload() });
+listen_english.addEventListener('click', function() {toggleLanguage(false); highlight(); location.reload()})
 
 window.onload = function() {toggleLanguage(localStorage.getItem('current_language'))};
 
