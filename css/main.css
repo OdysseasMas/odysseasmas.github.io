@@ -770,6 +770,8 @@ header {
   position: relative; }
   .bfast:hover > span::before, .lunch:hover > span::before, .dinner:hover > span::before {
     right: 0;
+    -webkit-transition: right 0.5s ease-in;
+    -o-transition: right 0.5s ease-in;
     transition: right 0.5s ease-in; }
   .bfast span, .lunch span, .dinner span {
     z-index: 1; }
