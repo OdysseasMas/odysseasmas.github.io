@@ -147,4 +147,7 @@ window.onresize = function() {
 }
 
 
-
+// An attempt to hide the appearance of both languages when reloading 
+$(document).ready(function(){
+  $(this).scrollTop(0);
+});

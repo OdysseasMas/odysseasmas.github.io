@@ -773,10 +773,10 @@ header {
     -webkit-transition: right 0.5s ease-in;
     -o-transition: right 0.5s ease-in;
     transition: right 0.5s ease-in; }
+  .bfast:hover > span, .lunch:hover > span, .dinner:hover > span {
+    color: #354863; }
   .bfast span, .lunch span, .dinner span {
     z-index: 1; }
-    .bfast span:hover, .lunch span:hover, .dinner span:hover {
-      color: #354863; }
     .bfast span:before, .lunch span:before, .dinner span:before {
       content: "";
       position: absolute;

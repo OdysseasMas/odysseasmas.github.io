@@ -374,11 +374,13 @@ $third-color:#212422; // eery black
         transition: right 0.5s ease-in;
     }
 
+    &:hover > span{
+        color: $secondary-color;
+    }
+
     span{
 
-        &:hover{
-            color: $secondary-color;
-        }
+       
         z-index: 1;
 
         &:before{
