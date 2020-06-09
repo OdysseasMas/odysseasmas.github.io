@@ -732,10 +732,10 @@ header {
   flex: 0 1 calc(49% - 8px); }
 
 .left {
-  animation: fadeInLeft 3s ease-in; }
+  animation: fadeInLeft 1s ease-in; }
 
 .right {
-  animation: fadeInRight 3s ease-in; }
+  animation: fadeInRight 1s ease-in; }
 
 .food-option {
   width: 10em;
