@@ -600,172 +600,164 @@ header {
   -ms-flex-align: center;
   align-items: center; }
 
-.catalogue-ctr {
+/*
+*   FOOD MENU STYLING STARTS ---------------------------------------------------------------------------------
+*
+*/
+.breakfast-ctr {
   margin: 1em;
   margin-bottom: 2em;
-  width: 90vw;
-  height: 40vw;
+  width: 100vw;
+  height: 90vh;
+  background: url(../../dist/img/menu-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .catalogue-ctr a {
-    background-color: #F2EBD4;
-    font-size: 1.4vw; }
-  .catalogue-ctr .s {
-    position: relative;
-    width: 50%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .catalogue-ctr .s.two {
-      background-color: #605E6E;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      .catalogue-ctr .s.two:before {
-        position: absolute;
-        left: -10%;
-        font-size: 3vw;
-        content: "Breakfast";
-        -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg); }
-      .catalogue-ctr .s.two:after {
-        position: absolute;
-        top: 0;
-        font-size: 3vw;
-        content: "-10 Am Tour only-"; }
-      .catalogue-ctr .s.two a {
-        font-size: 1.4vw;
-        margin: 1em; }
-    .catalogue-ctr .s .b {
-      position: relative;
-      width: 100%;
-      height: 50%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .catalogue-ctr .s .b.one {
-        background-color: #786866;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center; }
-        .catalogue-ctr .s .b.one a {
-          white-space: nowrap;
-          margin: 0.2em; }
-        .catalogue-ctr .s .b.one:before {
-          position: absolute;
-          left: -5%;
-          font-size: 3vw;
-          content: "Lunch";
-          -webkit-transform: rotate(90deg);
-          -ms-transform: rotate(90deg);
-          transform: rotate(90deg); }
-      .catalogue-ctr .s .b.two {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-        .catalogue-ctr .s .b.two .c {
-          width: 100%;
-          height: 100%; }
-          .catalogue-ctr .s .b.two .c.one {
-            background-color: #BB874E;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center; }
-            .catalogue-ctr .s .b.two .c.one a {
-              font-size: 1.5vw; }
-          .catalogue-ctr .s .b.two .c.two {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column; }
-            .catalogue-ctr .s .b.two .c.two .d {
-              width: 100%;
-              height: 50%; }
-              .catalogue-ctr .s .b.two .c.two .d.one {
-                background-color: #4F575D;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center; }
-              .catalogue-ctr .s .b.two .c.two .d.two {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex; }
-                .catalogue-ctr .s .b.two .c.two .d.two .e {
-                  width: 50%;
-                  height: 100%; }
-                  .catalogue-ctr .s .b.two .c.two .d.two .e.one {
-                    background-color: #354863;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                    justify-content: center;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    align-items: center; }
-                    .catalogue-ctr .s .b.two .c.two .d.two .e.one:before {
-                      content: "Food";
-                      -webkit-transform: rotate(90deg);
-                      -ms-transform: rotate(90deg);
-                      transform: rotate(90deg);
-                      color: #F2EBD4; }
-                  .catalogue-ctr .s .b.two .c.two .d.two .e.two {
-                    background-color: #F2EBD4;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                    justify-content: center;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    align-items: center; }
-                    .catalogue-ctr .s .b.two .c.two .d.two .e.two:before {
-                      content: "Menu";
-                      -webkit-transform: rotate(90deg);
-                      -ms-transform: rotate(90deg);
-                      transform: rotate(90deg);
-                      color: #354863; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
 
+.lunch-ctr {
+  margin: 1em;
+  margin-bottom: 2em;
+  width: 100vw;
+  height: 90vh;
+  background: url(../../dist/img/lunch-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.bf-new-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: none;
+  width: 75vw;
+  min-height: fit-content; }
+
+.lu-new-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  width: 75vw;
+  min-height: fit-content; }
+
+.option-ctr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.arrow-back, .larrow-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer; }
+  .arrow-back:hover, .larrow-back:hover {
+    animation: heartBeat 2s linear; }
+
+.bfood-ctr, .lfood-ctr {
+  border: 1px solid lightgray;
+  border-top: 1px solid whitesmoke;
+  border-radius: 4px;
+  flex: 0 1 calc(40% - 8px);
+  margin: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .bfood-ctr .gre, .bfood-ctr .eng, .lfood-ctr .gre, .lfood-ctr .eng {
+    text-align: center;
+    width: 50%; }
+  .bfood-ctr:hover > .menu-pics, .lfood-ctr:hover > .menu-pics {
+    opacity: 0.67; }
+
+.lfood-ctr {
+  flex: 0 1 calc(49% - 8px); }
+
+.left {
+  animation: fadeInLeft 1s ease-in; }
+
+.right {
+  animation: fadeInRight 1s ease-in; }
+
+.food-option {
+  width: 10em;
+  margin-top: 5em;
+  min-height: 4em;
+  display: flex;
+  justify-content: center;
+  background-color: #F87060;
+  color: black;
+  text-transform: uppercase; }
+
+.bfhide, .luhide {
+  display: none; }
+
+.bfast, .lunch {
+  background-color: transparent;
+  font-family: 'Futura';
+  letter-spacing: 3px;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 180px;
+  height: 40px;
+  border-radius: 3px;
+  font-size: 1.3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .bfast:hover > span::before, .lunch:hover > span::before {
+    right: 0;
+    transition: right 0.5s ease-in; }
+  .bfast span, .lunch span {
+    z-index: 1; }
+    .bfast span:hover, .lunch span:hover {
+      color: #354863; }
+    .bfast span:before, .lunch span:before {
+      content: "";
+      position: absolute;
+      background: white;
+      top: 0;
+      bottom: 0;
+      right: 100%;
+      left: 0;
+      z-index: -1;
+      transition: right 0.09s ease-in; }
+
+.bhide, .lhide {
+  display: none; }
+
+.menu-pics {
+  max-width: 180px;
+  max-height: 180px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px; }
+
+.bwarning, .lwarning {
+  position: absolute;
+  bottom: -2.5%;
+  font-size: 0.8em; }
+
+/*
+*   FOOD MENU STYLING ENDS ---------------------------------------------------------------------------------
+*
+*/
 .board-ctr {
   margin-bottom: 1em;
   display: -webkit-box;
@@ -993,7 +985,11 @@ header {
     .bio-greg p, .bio-john p {
       font-size: 1.2em !important; }
   .board-wrapper .board-ctr .rect-ctr p {
-    line-height: 1.6em; } }
+    line-height: 1.6em; }
+  .bf-new-layout, .lu-new-layout {
+    width: 95vw; }
+  .arrow-back, .larrow-back {
+    left: 1.5%; } }
 
 @media only screen and (max-width: 900px) {
   .gallery-ctr {
@@ -1029,8 +1025,18 @@ header {
 @media only screen and (max-width: 768px) {
   .menu {
     width: 35%; }
-  .catalogue-ctr {
-    height: 84vw; }
+  .bfast:hover > span::before {
+    transition: right 0.10s ease-in; }
+  body .bfood-ctr {
+    flex: 0 1 calc(90% - 8px); }
+  body .lfood-ctr {
+    flex: 0 1 calc(90% - 8px); }
+  body .lwarning {
+    bottom: -0.8%; }
+  body .special {
+    margin-top: 5em; }
+  .breakfast-ctr .warning {
+    bottom: -2%; }
   .options-ctr {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

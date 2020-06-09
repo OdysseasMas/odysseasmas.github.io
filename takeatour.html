@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&family=Raleway:wght@500&display=swap" rel="stylesheet">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
 </head>
 
 <body>
@@ -222,31 +226,110 @@
             </div>
             
         </div>
-        <div class="catalogue-ctr">
-            <div class="s two">
-                
-                <a onmouseover="showMyImg('bc', ' .s')">butter croissant</a>
-                <a onmouseover="showMyImg('cc', ' .s')">chocolate croissant</a>
-                <a onmouseover="showMyImg('tr', ' .s')">phyllo wrapped cheese bites</a>
-                <a onmouseover="showMyImg('lk', ' .s')">phyllo wrapped susage bites</a>
-                <a onmouseover="showMyImg('oj',' .s')">orange juice</a>
-                <a onmouseover="showMyImg('aj', ' .s')">apple juice</a>
-                
+        <div class="breakfast-ctr">
+            
+            <span onclick="animat('.bfast','.breakfast-ctr','.bfhide.bwarning','.bfhide.arrow-back','.bfood-ctr.bfhide','bhide','bfhide')" class = "bfast"> 
+                <span class = "eng"> Breakfast </span> 
+                <span class = "gre hide"> Πρωινο </span> 
+            </span>
+
+            <div onclick="revert('.bfast','.breakfast-ctr','.bwarning','.arrow-back','.bfood-ctr','bhide','bfhide')" class="bfhide arrow-back"> <img src = "/dist/img/barrow.png" ></div>
+        
+            <div class = "bfood-ctr left special bfhide" > 
+                <span class = "eng"> Butter Croissant </span> <span class = "gre hide"> Κρουασάν Βουτύρου </span>   <img class = "menu-pics" src = "img/menu/crois.jpg" width = "180px" height="180px">  
             </div>
-            <div class="s one">
+            <div class = "bfood-ctr right bfhide" > 
+                <span class = "eng"> Chocolate Croissant </span> <span class = "gre hide"> Κρουασάν Σοκολάτας </span>  <img class = "menu-pics" src = "img/menu/choc.jpg" width = "180px" height="180px">  
+            </div>
+            <div class = "bfood-ctr left bfhide" > 
+                <span class = "eng"> Cheese Bites </span> <span class = "gre hide"> Τυροπιτάκια </span>  <img class = "menu-pics" src = "img/menu/tyropita.jpg" width = "180px" height="180px">  
+            </div>
+            <div class = "bfood-ctr right bfhide" > 
+                <span class = "eng"> Sausage Bites </span> <span class = "gre hide"> Λουκανοπιτάκια </span> <img class = "menu-pics" src = "img/menu/loukaniko.jpg" width = "180px" height="180px">  
+            </div>
+            <div class = "bfood-ctr left bfhide" > 
+                <span class = "eng"> Juice </span> <span class = "gre hide"> Χυμός </span>  <img class = "menu-pics" src = "img/menu/portokali.jpg" width = "180px" height="180px">  
+            </div>
+            <div class = "bfood-ctr right bfhide" > 
+                <span class = "eng"> Refreshments </span> <span class = "gre hide"> Αναψυκτικά </span>  <img class = "menu-pics" src = "img/menu/mhlo.jpg" width = "180px" height="180px">  
+            </div>
+
+            <span class = "bfhide bwarning eng"> *Offered only for the morning trip  </span>
+            <span class = "bfhide bwarning gre hide"> *Μόνο για την πρωινή βόλτα  </span>
+        
+        </div>
+
+        <div class="lunch-ctr">
+            <span onclick="animat('.lunch','.lunch-ctr','.luhide.lwarning','.luhide.larrow-back','.lfood-ctr.luhide','lhide','luhide','.option-ctr.luhide')" class = "lunch"> <span class = "eng"> Lunch </span> <span class = "gre hide"> Μεσημεριανο </span> </span>
+
+            <div onclick="revert('.lunch','.lunch-ctr','.lwarning','.larrow-back','.lfood-ctr','lhide','luhide','.option-ctr')" class="luhide larrow-back"> <img src = "/dist/img/barrow.png" ></div>
+            
+            <div class="lfood-ctr luhide food-option"> <span class = "eng"> Option A </span> <span class = "gre hide"> Επιλογή Α </span> </div>
+
+        
+            <div class="option-ctr luhide" >
+                <div class = "lfood-ctr left luhide" > 
+                    <span class = "eng"> Cheese Pie </span> <span class = "gre hide"> Τυρόπιτα </span>   <img class = "menu-pics" src = "img/menu/tyropita.jpg" width = "180px" height="180px">  
+                </div>
+                <div class = "lfood-ctr right luhide" > 
+                    <span class = "eng"> Greek Salad </span> <span class = "gre hide"> Χωριάτικη Σάλατα </span>  <img class = "menu-pics" src = "img/menu/gsalad.jpg" width = "180px" height="180px">  
+                </div>
+                <div class = "lfood-ctr left luhide" > 
+                    <span class = "eng"> Μarinated Αnchovies </span> <span class = "gre hide"> Γαύρος Μαρινάτος </span>  <img class = "menu-pics" src = "img/menu/gavros.jpeg" width = "180px" height="180px">  
+                </div>
+                <div class = "lfood-ctr right luhide" > 
+                    <span class = "eng"> Τaramosalata </span> <span class = "gre hide"> Ταραμοσαλάτα </span> <img class = "menu-pics" src = "img/menu/tsalad.jpg" width = "180px" height="180px">  
+                </div>
+                <div class = "lfood-ctr left luhide" > 
+                    <span class = "eng"> Shrimp Pasta </span> <span class = "gre hide"> Γαριδομακαρονάδα </span>  <img class = "menu-pics" src = "img/menu/spasta.jpg" width = "180px" height="180px">  
+                </div>
+            </div>
+            
+
+            <div class = "lfood-ctr luhide food-option" > 
+                <span class = "eng"> Option B </span> <span class = "gre hide"> Επιλογή Β </span>   
+            </div>
+
+            <div class="option-ctr luhide">
+                <div class = "lfood-ctr left luhide" > 
+                    <span class = "eng"> Spinach Pie </span> <span class = "gre hide"> Σπανακόπιτα </span>   <img class = "menu-pics" src = "img/menu/spie.jpg" width = "180px" height="180px">  
+                </div>
+                <div class = "lfood-ctr right luhide" > 
+                    <span class = "eng"> Greek Salad </span> <span class = "gre hide"> Χωριάτικη Σάλατα </span>  <img class = "menu-pics" src = "img/menu/gsalad.jpg" width = "180px" height="180px">  
+                </div>
+                <div class = "lfood-ctr left luhide" > 
+                    <span class = "eng"> Pita Bread </span> <span class = "gre hide"> Πιττάκια </span>  <img class = "menu-pics" src = "img/menu/tyropita.jpg" width = "180px" height="180px">  
+                </div>
+                <div class = "lfood-ctr right luhide" > 
+                    <span class = "eng"> Tzatziki </span> <span class = "gre hide"> Τζατζίκι </span> <img class = "menu-pics" src = "img/menu/tzatziki.jpg" width = "180px" height="180px">  
+                </div>
+                <div class = "lfood-ctr left luhide" > 
+                    <span class = "eng"> Chicken Skewers </span> <span class = "gre hide"> Σουβλάκι Κοτόπουλο </span>  <img class = "menu-pics" src = "img/menu/kkalamaki.jpg" width = "180px" height="180px">  
+                </div>
+                <div class = "lfood-ctr right luhide" > 
+                    <span class = "eng"> Pork Skewers </span> <span class = "gre hide"> Χοιρινό Σουβλάκι </span>  <img class = "menu-pics" src = "img/menu/kalamaki.jpg" width = "180px" height="180px">  
+                </div>
+
+            </div>
+
+           
+
+            <span class = "luhide lwarning eng"> *Offered only for the morning trip  </span>
+            <span class = "luhide lwarning gre hide"> *Μόνο για την πρωινή βόλτα  </span>
+            <!-- <div class="s one">
                 <div class="b one">
                     
-                        <a onmouseover="showMyImg('shp', ' .b')">shrimp pasta</a>
-                        <a onmouseover="showMyImg('ts', ' .b')">taramosalata</a>
-                        <a onmouseover="showMyImg('ma', ' .b')">marinated anchovies</a>
-                         <a onmouseover="showMyImg('gs', ' .b')">greek salad</a>
+                        <a >shrimp pasta</a>
+                        <a >taramosalata</a>
+                        <a >marinated anchovies</a>
+                         <a >greek salad</a>
 
 
                     
-                        <a onmouseover="showMyImg('sp',' .b')">spinach pie</a>
-                        <a onmouseover="showMyImg('tz', ' .b')">tzatziki</a>
-                        <a onmouseover="showMyImg('ps',' .b')">pork skewers</a>
-                        <a onmouseover="showMyImg('cs', ' .b')">chicken skewers</a>
+                        <a >spinach pie</a>
+                        <a >tzatziki</a>
+                        <a >pork skewers</a>
+                        <a >chicken skewers</a>
 
    
                    
@@ -255,7 +338,7 @@
                 <div class="b two">
                     <div class="c one">
                        
-                        <a onmouseover="showMyImg('fg', ' .c')">finger food</a>
+                        <a >finger food</a>
                         
                     </div>
 
@@ -276,8 +359,15 @@
                     
                 </div>
 
-            </div>
+            </div> -->
+
+
         </div>
+
+
+
+            
+       
         <div class="board-ctr">
             <div id="one" class="box-ctr fifth">
     
@@ -342,4 +432,5 @@
     </div>
     <script src="js/nav.js"></script> 
     <script src="js/ttour.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
