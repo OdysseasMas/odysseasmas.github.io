@@ -151,4 +151,10 @@ function revert(btn_cname,ctr_cname, war_cname, arr_cname, fit_cname, btn_add_hi
 // }
 
 
-
+function fadeLeftRight(){
+  var toFade = document.querySelectorAll('.welcome-text');
+  for (let i = 0; i < toFade.length; i++){
+    toFade[i].classList.add('fadeLR');
+    
+  }
+}

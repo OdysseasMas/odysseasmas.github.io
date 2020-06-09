@@ -71,8 +71,7 @@ $third-color:#212422; // eery black
                 height: 3.5em;               
             }
 
-            
-
+      
             .end{
                 background-color: $primary-color;                
                 align-self: flex-end;
@@ -370,6 +369,8 @@ $third-color:#212422; // eery black
     
     &:hover > span::before{
         right:0;
+        -webkit-transition: right 0.5s ease-in;
+        -o-transition: right 0.5s ease-in;
         transition: right 0.5s ease-in;
     }
 
