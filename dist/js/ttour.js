@@ -35,8 +35,10 @@ function helper_animate(btn_cname,ctr_cname, war_cname, arr_cname, fit_cname, bt
   breakfast_button.classList.add(btn_add_hide);
   if (btn_cname[1] == 'b'){
     change_layout.classList.add('bf-new-layout');
-  } else {
+  } else if (btn_cname[1] == "l") {
     change_layout.classList.add('lu-new-layout');
+  } else{
+    change_layout.classList.add('di-new-layout');
   }
   
   setTimeout(function(){
@@ -71,8 +73,10 @@ function revert(btn_cname,ctr_cname, war_cname, arr_cname, fit_cname, btn_add_hi
   breakfast_button.classList.remove(btn_add_hide);
   if (btn_cname[1] == 'b'){
     change_layout.classList.remove('bf-new-layout');
-  } else {
+  } else if (btn_cname[1] == "l") {
     change_layout.classList.remove('lu-new-layout');
+  } else{
+    change_layout.classList.remove('di-new-layout');
   }
   arrow.classList.add(hid_cname);
   for (let i=0; i < items.length; i++){

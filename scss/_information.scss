@@ -219,6 +219,27 @@ $third-color:#212422; // eery black
     position: relative;
 
 }
+.dinner-ctr{
+    margin: 1em;
+    margin-bottom: 2em;
+    width: 100vw;
+    height: 60vh;
+    background: url(../../dist/img/dinner-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+   
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
 
 // different flexbox when menu items are shown
 .bf-new-layout{
@@ -240,15 +261,26 @@ $third-color:#212422; // eery black
     min-height: fit-content;
 }
 
+.di-new-layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 75vw;
+    min-height: fit-content;
+}
+
 // food option
 .option-ctr{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     
 }
 
-.arrow-back,.larrow-back{
+.arrow-back,.larrow-back,.darrow-back{
     position: absolute;
     top:0;
     left: 0;
@@ -260,7 +292,7 @@ $third-color:#212422; // eery black
 }
 
 // breakfast food container
-.bfood-ctr,.lfood-ctr{
+.bfood-ctr,.lfood-ctr,.dfood-ctr{
     border: 1px solid lightgray;
     border-top: 1px solid whitesmoke;
     border-radius: 4px;
@@ -309,12 +341,12 @@ $third-color:#212422; // eery black
 
 
 // hides breakfast,lunch food and warning messages
-.bfhide,.luhide{
+.bfhide,.luhide,.dihide{
     display: none;
 }
 
 
-.bfast,.lunch{           
+.bfast,.lunch,.dinner{           
     background-color: transparent;
     font-family: 'Futura';
     letter-spacing: 3px;
@@ -363,7 +395,7 @@ $third-color:#212422; // eery black
 }
 
 // Hides the breakfast,lunch buttons when clicked
-.bhide,.lhide{
+.bhide,.lhide,.dhide{
     display: none;
 }
     
@@ -379,7 +411,7 @@ $third-color:#212422; // eery black
 
 
 
-.bwarning,.lwarning{
+.bwarning,.lwarning,.dwarning{
     position: absolute;
     bottom:-2.5%;
     font-size: 0.8em;
