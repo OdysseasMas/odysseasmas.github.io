@@ -530,6 +530,12 @@ header {
       box-sizing: border-box;
       width: 100%;
       height: 100%; }
+      .welcome-ctr .msg-ctr .msg-box div:nth-child(-n+2) {
+        animation: fadeInLeftBig 2s linear;
+        animation-iteration-count: 1; }
+      .welcome-ctr .msg-ctr .msg-box div:nth-last-child(-n+2) {
+        animation: fadeInRightBig 2s linear;
+        animation-iteration-count: 1; }
       .welcome-ctr .msg-ctr .msg-box .welcome-text {
         font-size: 1.5em;
         margin: 0;
@@ -1083,7 +1089,7 @@ header {
     height: 70vw; }
     #six p {
       line-height: 2em;
-      font-size: 1.5em; }
+      font-size: 1.25em; }
   .pics-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
