@@ -1,3 +1,4 @@
+
 /** Opens the social media platform 
  *  in a new tab.
  */
@@ -8,12 +9,16 @@ function smDirect(platform){
 
 function pDirect(page){
   if (page == 'home'){
+    // toggleLanguage(localStorage.getItem('current_language'))
     window.open("/dist/index.html", '_parent');
   } else if (page == 'takeatour'){
+    // toggleLanguage(localStorage.getItem('current_language'))
     window.open("/dist/takeatour.html", '_parent');
   } else if (page == 'whoweare'){
+    // toggleLanguage(localStorage.getItem('current_language'))
     window.open("/dist/whoweare.html", '_parent');
   } else{
+    // toggleLanguage(localStorage.getItem('current_language'))
     window.open("/dist/contactus.html", '_parent' );
   }
 }
@@ -83,15 +88,15 @@ var listen_english = document.querySelector('#eng');
 // true = greek, false = english
 
 listen_greek.addEventListener('click', function() {toggleLanguage(true); highlight();  });
-listen_english.addEventListener('click', function() {toggleLanguage(false); highlight(); })
+listen_english.addEventListener('click', function() {toggleLanguage(false); highlight(); });
 
-window.onload = function() {toggleLanguage(sessionStorage.getItem('current_language'))};
+// window.onload = function(){toggleLanguage(localStorage.getItem('current_language'));};
+$(document).ready(function(){toggleLanguage(localStorage.getItem('current_language'));});
 
 function toggleLanguage(lang_toggle){
   if (lang_toggle == true || lang_toggle == 'gre')  {
-    sessionStorage.setItem("current_language", 'gre');
+    localStorage.setItem("current_language", 'gre');
     // could be en_selector.length as they should be the same
-    console.log(gr_selector.length);
     for (let i = 0; i < gr_selector.length; i++){
       
       let pragma = gr_selector[i];
@@ -100,7 +105,7 @@ function toggleLanguage(lang_toggle){
       pragma.classList.remove('ghide');
     }  
   } else {
-    sessionStorage.setItem("current_language", 'eng');
+    localStorage.setItem("current_language", 'eng');
     for (let i = 0; i < gr_selector.length; i++){
       let pragma = gr_selector[i];
       let item = en_selector[i];
@@ -114,7 +119,7 @@ function toggleLanguage(lang_toggle){
 function highlight(){
   var sel_eng = document.querySelector('.flag-eng');
   var sel_gre = document.querySelector('.flag-gre');
-  if (sessionStorage.getItem("current_language") == 'eng'){
+  if (localStorage.getItem("current_language") == 'eng'){
     sel_gre.classList.remove('select');
     sel_eng.classList.add('select');
   } else {
@@ -149,7 +154,7 @@ window.onresize = function() {
 }
 
 
-// An attempt to hide the appearance of both languages when reloading 
-$(document).ready(function(){
-  $(this).scrollTop(0);
-});
+//An attempt to hide the appearance of both languages when reloading 
+// $(document).ready(function(){
+//   $(this).scrollTop(0);
+// });

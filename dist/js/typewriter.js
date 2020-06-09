@@ -3,12 +3,8 @@
 // This uses a typewriter plugin library. Credits to @: https://safi.me.uk/typewriterjs/
 // It's a great and unbilevably simple typewriter.
 
-$('.modifiers').ready(function(){typeWrite();});
+$(document).ready(function(){typeWrite();});
 
-$('.modifiers').on('pageinit', function() {
-  typeWrite();
-
-});
 
 var listen_greek = document.querySelector('#gre');
 var listen_english = document.querySelector('#eng');
@@ -20,7 +16,7 @@ function typeWrite(){
   var option1  = ["Welcome!", "Join our boat tour.", "Explore new places.", "Have fun."]
   var option2 = ["Click us.","Or scroll down.","This"," is"," us."," Argo Cruising."];
 
-  if (sessionStorage.getItem('current_language') == 'gre' ){
+  if (localStorage.getItem('current_language') == 'gre' ){
     option1 = ["Καλως ηρθατε!", "Ελατε μαζι μας.", "Ανακαλυψτε καινουργια μερη.", "Περαστε απιστευτα." ]
     option2 = ["Κάντε κλικ στις φωτογραφίες.","Δείτε ποιοι είμαστε.","Διακοπές"," σημαίνει"," θάλασσα."," Argo Cruising."]
   }
