@@ -82,23 +82,25 @@ var listen_english = document.querySelector('#eng');
 
 // true = greek, false = english
 
-listen_greek.addEventListener('click', function() {toggleLanguage(true); highlight(); location.reload() });
-listen_english.addEventListener('click', function() {toggleLanguage(false); highlight(); location.reload()})
+listen_greek.addEventListener('click', function() {toggleLanguage(true); highlight();  });
+listen_english.addEventListener('click', function() {toggleLanguage(false); highlight(); })
 
-window.onload = function() {toggleLanguage(localStorage.getItem('current_language'))};
+window.onload = function() {toggleLanguage(sessionStorage.getItem('current_language'))};
 
 function toggleLanguage(lang_toggle){
   if (lang_toggle == true || lang_toggle == 'gre')  {
-    localStorage.setItem("current_language", 'gre');
+    sessionStorage.setItem("current_language", 'gre');
     // could be en_selector.length as they should be the same
+    console.log(gr_selector.length);
     for (let i = 0; i < gr_selector.length; i++){
+      
       let pragma = gr_selector[i];
       let item = en_selector[i];
       item.classList.add('ehide');
       pragma.classList.remove('ghide');
     }  
   } else {
-    localStorage.setItem("current_language", 'eng');
+    sessionStorage.setItem("current_language", 'eng');
     for (let i = 0; i < gr_selector.length; i++){
       let pragma = gr_selector[i];
       let item = en_selector[i];
@@ -112,7 +114,7 @@ function toggleLanguage(lang_toggle){
 function highlight(){
   var sel_eng = document.querySelector('.flag-eng');
   var sel_gre = document.querySelector('.flag-gre');
-  if (localStorage.getItem("current_language") == 'eng'){
+  if (sessionStorage.getItem("current_language") == 'eng'){
     sel_gre.classList.remove('select');
     sel_eng.classList.add('select');
   } else {
