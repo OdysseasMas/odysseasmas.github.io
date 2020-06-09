@@ -643,6 +643,23 @@ header {
   align-items: center;
   position: relative; }
 
+.dinner-ctr {
+  margin: 1em;
+  margin-bottom: 2em;
+  width: 100vw;
+  height: 60vh;
+  background: url(../../dist/img/dinner-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
 .bf-new-layout {
   display: flex;
   flex-direction: row;
@@ -660,20 +677,30 @@ header {
   width: 75vw;
   min-height: fit-content; }
 
+.di-new-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  width: 75vw;
+  min-height: fit-content; }
+
 .option-ctr {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
-.arrow-back, .larrow-back {
+.arrow-back, .larrow-back, .darrow-back {
   position: absolute;
   top: 0;
   left: 0;
   cursor: pointer; }
-  .arrow-back:hover, .larrow-back:hover {
+  .arrow-back:hover, .larrow-back:hover, .darrow-back:hover {
     animation: heartBeat 2s linear; }
 
-.bfood-ctr, .lfood-ctr {
+.bfood-ctr, .lfood-ctr, .dfood-ctr {
   border: 1px solid lightgray;
   border-top: 1px solid whitesmoke;
   border-radius: 4px;
@@ -682,10 +709,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .bfood-ctr .gre, .bfood-ctr .eng, .lfood-ctr .gre, .lfood-ctr .eng {
+  .bfood-ctr .gre, .bfood-ctr .eng, .lfood-ctr .gre, .lfood-ctr .eng, .dfood-ctr .gre, .dfood-ctr .eng {
     text-align: center;
     width: 50%; }
-  .bfood-ctr:hover > .menu-pics, .lfood-ctr:hover > .menu-pics {
+  .bfood-ctr:hover > .menu-pics, .lfood-ctr:hover > .menu-pics, .dfood-ctr:hover > .menu-pics {
     opacity: 0.67; }
 
 .lfood-ctr {
@@ -707,10 +734,10 @@ header {
   color: black;
   text-transform: uppercase; }
 
-.bfhide, .luhide {
+.bfhide, .luhide, .dihide {
   display: none; }
 
-.bfast, .lunch {
+.bfast, .lunch, .dinner {
   background-color: transparent;
   font-family: 'Futura';
   letter-spacing: 3px;
@@ -728,14 +755,14 @@ header {
   justify-content: center;
   align-items: center;
   position: relative; }
-  .bfast:hover > span::before, .lunch:hover > span::before {
+  .bfast:hover > span::before, .lunch:hover > span::before, .dinner:hover > span::before {
     right: 0;
     transition: right 0.5s ease-in; }
-  .bfast span, .lunch span {
+  .bfast span, .lunch span, .dinner span {
     z-index: 1; }
-    .bfast span:hover, .lunch span:hover {
+    .bfast span:hover, .lunch span:hover, .dinner span:hover {
       color: #354863; }
-    .bfast span:before, .lunch span:before {
+    .bfast span:before, .lunch span:before, .dinner span:before {
       content: "";
       position: absolute;
       background: white;
@@ -746,7 +773,7 @@ header {
       z-index: -1;
       transition: right 0.09s ease-in; }
 
-.bhide, .lhide {
+.bhide, .lhide, .dhide {
   display: none; }
 
 .menu-pics {
@@ -755,7 +782,7 @@ header {
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px; }
 
-.bwarning, .lwarning {
+.bwarning, .lwarning, .dwarning {
   position: absolute;
   bottom: -2.5%;
   font-size: 0.8em; }
@@ -992,9 +1019,9 @@ header {
       font-size: 1.2em !important; }
   .board-wrapper .board-ctr .rect-ctr p {
     line-height: 1.6em; }
-  .bf-new-layout, .lu-new-layout {
+  .bf-new-layout, .lu-new-layout, .di-new-layout {
     width: 95vw; }
-  .arrow-back, .larrow-back {
+  .arrow-back, .larrow-back, .darrow-back {
     left: 1.5%; } }
 
 @media only screen and (max-width: 900px) {
