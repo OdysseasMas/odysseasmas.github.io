@@ -1,15 +1,6 @@
-// $(window).ready(function() {
-//     $(".msg-box").css({
-//       'width': ($(".iframe-ctr").width() )
-//     });
-//     $(".msg-ctr").css({
-//         'height': ($(".iframe-ctr").height()/2 )
-//       });
 
-//   });
-
-
-  $(".options-ctr").find("a").click(function(e) {
+// // Show the picture on hover for menu
+$(".options-ctr").find("a").click(function(e) {
     e.preventDefault();
     var section = $(this).attr("href");
     var amount_to_scroll = (($(section).offset().top));
@@ -19,72 +10,141 @@
 });
 
 
-function showMyImg(img_name, ctr){
+// Shows and hides the menu buttons and contents
+function animat(btn_cname,ctr_cname, war_cname, arr_cname, fit_cname, btn_add_hide,hid_cname, option_cname = ""){
+  if ($(window).width() < 769){setTimeout(function(){ helper_animate(btn_cname,ctr_cname, war_cname, arr_cname, fit_cname, btn_add_hide,hid_cname,option_cname) }, 1000);
+  } else{
+    helper_animate(btn_cname,ctr_cname, war_cname, arr_cname, fit_cname, btn_add_hide,hid_cname, option_cname);
+  }
+
+}
+
+// Params: button class name, ctr class name, warning class name, arrow class name, food items class name, class name to hide button, class name that hides items.
+// option_cname (this one is optional)
+function helper_animate(btn_cname,ctr_cname, war_cname, arr_cname, fit_cname, btn_add_hide,hid_cname, option_cname = ""){
+  var breakfast_button = document.querySelector(btn_cname);
+  var change_layout = document.querySelector(ctr_cname);
+  var warnings = document.querySelectorAll(war_cname);
+  var arrow = document.querySelector(arr_cname);
+  var items = document.querySelectorAll(fit_cname);
+  var options;
+  if (option_cname != ""){
+    options = document.querySelectorAll(option_cname);
+  }
+
+  breakfast_button.classList.add(btn_add_hide);
+  if (btn_cname[1] == 'b'){
+    change_layout.classList.add('bf-new-layout');
+  } else {
+    change_layout.classList.add('lu-new-layout');
+  }
   
-  if (img_name === 'bc'){
-    findProperPlace(ctr,'crois.jpg');
-  } 
-  if (img_name == 'cc'){
-    findProperPlace(ctr, 'choc.jpg');
-  }
-  if (img_name === 'tr'){
-    findProperPlace(ctr,'tyropita.jpg');
-  } 
-  if (img_name == 'lk'){
-    findProperPlace(ctr, 'loukaniko.jpg');
-  }
-  if (img_name === 'oj'){
-    findProperPlace(ctr,'portokali.jpg');
-  } 
-  if (img_name == 'aj'){
-    findProperPlace(ctr, 'mhlo.jpg');
-  }
-  if (img_name === 'shp'){
-    findProperPlace(ctr,'spasta.jpg');
-  } 
-  if (img_name == 'ts'){
-    findProperPlace(ctr, 'tsalad.jpg');
-  }
-  if (img_name === 'ma'){
-    findProperPlace(ctr,'gavros.jpeg');
-  } 
-  if (img_name == 'gs'){
-    findProperPlace(ctr, 'gsalad.jpg');
-  }
-  if (img_name === 'sp'){
-    findProperPlace(ctr,'spie.jpg');
-  } 
-  if (img_name == 'tz'){
-    findProperPlace(ctr, 'tzatziki.jpg');
-  }
-  if (img_name === 'ps'){
-    findProperPlace(ctr,'kalamaki.jpg');
-  } 
-  if (img_name == 'cs'){
-    findProperPlace(ctr, 'kkalamaki.jpg');
-  }
-  if (img_name == 'fg'){
-    findProperPlace(ctr, 'fg.jpg');
-  }
-  if (img_name == 'alc'){
-    findProperPlace(ctr, 'alc.jpg');
-  }
-}
-
-
-function findProperPlace(str,img){
-  var toChange = $('.catalogue-ctr'.concat(str));
-  var path = "(/dist/img/menu/".concat(img).concat(")");
-
-  toChange.css("background-image", "url".concat(path));
-  toChange.css("background-repeat", "no-repeat");
-  toChange.css("background-position", "center");
-  toChange.css("background-size", "cover");
+  setTimeout(function(){
+    arrow.classList.remove(hid_cname);
+    for (let i=0; i < items.length; i++){
+      if (i < 2) {
+        warnings[i].classList.remove(hid_cname);
+        if (option_cname != ""){
+          options[i].classList.remove(hid_cname);
+        }
+        
+      }
+      items[i].classList.remove(hid_cname);} } , 200); 
 
 }
 
 
-var clkState = 0;
+
+
+
+  
+function revert(btn_cname,ctr_cname, war_cname, arr_cname, fit_cname, btn_add_hide,hid_cname,option_cname = ""){
+  var breakfast_button = document.querySelector(btn_cname);
+  var change_layout = document.querySelector(ctr_cname);
+  var warnings = document.querySelectorAll(war_cname);
+  var arrow = document.querySelector(arr_cname);
+  var items = document.querySelectorAll(fit_cname);
+  var options;
+  if (option_cname != ""){
+    options = document.querySelectorAll(option_cname);
+  }
+  breakfast_button.classList.remove(btn_add_hide);
+  if (btn_cname[1] == 'b'){
+    change_layout.classList.remove('bf-new-layout');
+  } else {
+    change_layout.classList.remove('lu-new-layout');
+  }
+  arrow.classList.add(hid_cname);
+  for (let i=0; i < items.length; i++){
+    if (i < 2) {
+      warnings[i].classList.add(hid_cname);
+      if (option_cname != ""){
+        options[i].classList.add(hid_cname);
+      }
+    }
+    items[i].classList.add(hid_cname);}
+
+}
+
+
+
+
+// function animateBr(){
+//   if ($(window).width() < 769){
+//     setTimeout(function(){
+//       var breakfast_button = document.querySelector('.bfast');
+//       var change_layout = document.querySelector('.breakfast-ctr');
+//       var warnings = document.querySelectorAll('.bfhide.warning');
+//       var arrow = document.querySelector('.bfhide.arrow-back');
+//       var items = document.querySelectorAll('.bfood-ctr.bfhide');
+//       breakfast_button.classList.add('bhide');
+//       change_layout.classList.add('add-layout');
+//       setTimeout(function(){
+//         arrow.classList.remove('bfhide');
+//         for (let i=0; i < items.length; i++){
+//           if (i < 2) {
+//             warnings[i].classList.remove('bfhide');
+//           }
+//           items[i].classList.remove('bfhide');} } , 200); 
+      
+//       }, 1000);
+
+//   } else {
+//     var breakfast_button = document.querySelector('.bfast');
+//     var change_layout = document.querySelector('.breakfast-ctr');
+//     var warnings = document.querySelectorAll('.bfhide.warning');
+//     var arrow = document.querySelector('.bfhide.arrow-back');
+//     var items = document.querySelectorAll('.bfood-ctr.bfhide');
+//     breakfast_button.classList.add('bhide');
+//     change_layout.classList.add('add-layout');
+//     setTimeout(function(){
+//       arrow.classList.remove('bfhide');
+//       for (let i=0; i < items.length; i++){
+//         if (i < 2) {
+//           warnings[i].classList.remove('bfhide');
+//         }
+//         items[i].classList.remove('bfhide');} } , 200); 
+//   }
+// }
+
+
+
+// function revert(){
+//   var breakfast_button = document.querySelector('.bfast');
+//   var change_layout = document.querySelector('.breakfast-ctr');
+//   var warnings = document.querySelectorAll('.warning');
+//   var arrow = document.querySelector('.arrow-back');
+//   var items = document.querySelectorAll('.bfood-ctr');
+//   breakfast_button.classList.remove('bhide');
+//   change_layout.classList.remove('add-layout');
+//   arrow.classList.add('bfhide');
+//   for (let i=0; i < items.length; i++){
+//     if (i < 2) {
+//       warnings[i].classList.add('bfhide');
+//     }
+//     items[i].classList.add('bfhide');}
+
+// }
 
 
 

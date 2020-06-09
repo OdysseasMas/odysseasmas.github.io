@@ -160,247 +160,226 @@ $third-color:#212422; // eery black
 
     
 }
+/*
+*   FOOD MENU STYLING STARTS ---------------------------------------------------------------------------------
+*
+*/
 
-.catalogue-ctr{
+.breakfast-ctr{
     margin: 1em;
     margin-bottom: 2em;
-    width: 90vw;
-    height: 40vw;
+    width: 100vw;
+    height: 90vh;
+   
+    background: url(../../dist/img/menu-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-    a{
-       
-        background-color: $primary-color;
-        font-size: 1.4vw;
-    }
-    
-
+   
     display: -webkit-box;
-    
-
     display: -ms-flexbox;
-    
-
     display: flex;
-    .s{ 
-        
-        position: relative;
+    justify-content: center;
+    align-items: center;
 
-        &.two{
-           
-            background-color: #605E6E; 
-            display: -webkit-box; 
-            display: -ms-flexbox; 
-            display: flex;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+    position: relative;
 
-            &:before{
-                position: absolute;
-                left:-10%;
-                font-size: 3vw;
-                content: "Breakfast";
-                -webkit-transform: rotate(90deg);
-                    -ms-transform: rotate(90deg);
-                        transform: rotate(90deg); 
-               
-            }
+}
 
-            &:after{
-                position: absolute;
-                top:0;
-                font-size: 3vw;
-                content: "-10 Am Tour only-";
-               
-                
-            }
+.lunch-ctr{
+    margin: 1em;
+    margin-bottom: 2em;
+    width: 100vw;
+    height: 90vh;
+    background: url(../../dist/img/lunch-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-            a{
-                font-size: 1.4vw;
-                margin: 1em;
-            }
-        }
+   
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-        width: 50%;
-        height: 100%;
+    position: relative;
 
-        display: -webkit-box;
+}
 
-        display: -ms-flexbox;
+// different flexbox when menu items are shown
+.bf-new-layout{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: none;
+    width: 75vw;
+    min-height: fit-content; // min !
+}
 
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        .b{
-            position: relative;
-            &.one{
-               
-                background-color: #786866;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
-                -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
-                -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
-                a{
-                    white-space: nowrap;
-                    margin:0.2em;
-                }
+.lu-new-layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 75vw;
+    min-height: fit-content;
+}
 
-                &:before{
-                    position: absolute;
-                    left:-5%;
-                    font-size: 3vw;
-                    content: "Lunch";
-                    -webkit-transform: rotate(90deg);
-                        -ms-transform: rotate(90deg);
-                            transform: rotate(90deg);
-                     
-                }
-                
-            }
-           
-            width: 100%;
-            height: 50%;
+// food option
+.option-ctr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
 
-            display: -webkit-box;
-
-            display: -ms-flexbox;
-
-            display: flex;
-
-            &.two{
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                .c{
-                    &.one{
-                      
-                        background-color: #BB874E;                       
-                        display: -webkit-box;                       
-                        display: -ms-flexbox;                       
-                        display: flex;
-                        -webkit-box-pack: center;
-                            -ms-flex-pack: center;
-                                justify-content: center;
-                        -webkit-box-align: center;
-                            -ms-flex-align: center;
-                                align-items: center;
-                        a{
-                            font-size: 1.5vw;
-                        }
-                    }
-
-                    width: 100%;
-                   
-                    height: 100%;
-                    &.two{
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: flex;
-                       
-                        -webkit-box-orient: vertical;
-                       
-                        -webkit-box-direction: normal;
-                       
-                            -ms-flex-direction: column;
-                       
-                                flex-direction: column;
-
-                        .d{
-                            &.one{
-                               
-                                background-color: #4F575D;
-                                display: -webkit-box;
-                                display: -ms-flexbox;
-                                display: flex;
-                                -webkit-box-pack: center;
-                                    -ms-flex-pack: center;
-                                        justify-content: center;
-                                -webkit-box-align: center;
-                                    -ms-flex-align: center;
-                                        align-items: center;
-                            }
-                            
-                            width: 100%;
-                            height: 50%;
-                            
-                            &.two{
-                                display: -webkit-box;
-                                display: -ms-flexbox;
-                                display: flex;
-                                .e{
-                                    width: 50%;
-                                    height: 100%;
-                                    &.one{
-                                        background-color: $secondary-color;
-                                        display: -webkit-box;
-                                        display: -ms-flexbox;
-                                        display: flex;
-                                        -webkit-box-pack: center;
-                                            -ms-flex-pack: center;
-                                                justify-content: center;
-                                        -webkit-box-align: center;
-                                            -ms-flex-align: center;
-                                                align-items: center;
-                                        &:before{
-                                            content: "Food";                                           
-                                            -webkit-transform: rotate(90deg);                                           
-                                                -ms-transform: rotate(90deg);                                           
-                                                    transform: rotate(90deg); 
-                                            color: $primary-color;                                                                      
-                                        }
-                                    }
-                                    &.two{
-                                        background-color: $primary-color;
-                                        display: -webkit-box;
-                                        display: -ms-flexbox;
-                                        display: flex;
-                                        -webkit-box-pack: center;
-                                            -ms-flex-pack: center;
-                                                justify-content: center;
-                                        -webkit-box-align: center;
-                                            -ms-flex-align: center;
-                                                align-items: center;
-                                        &:before{
-                                            content: "Menu";
-                                            
-                                            -webkit-transform: rotate(90deg);
-                                            
-                                                -ms-transform: rotate(90deg);
-                                            
-                                                    transform: rotate(90deg);
-                                            color: $secondary-color;
-                            
-                                            
-                                            
-                                        }
-                                    }
-                                
-                                }
-                            }
-                            
-                        }
-                    }                                       
-                }      
-            }            
-        }        
+.arrow-back,.larrow-back{
+    position: absolute;
+    top:0;
+    left: 0;
+    cursor: pointer;
+    
+    &:hover{
+        animation: heartBeat 2s linear;
     }
 }
 
+// breakfast food container
+.bfood-ctr,.lfood-ctr{
+    border: 1px solid lightgray;
+    border-top: 1px solid whitesmoke;
+    border-radius: 4px;
+    flex: 0 1 calc(40% - 8px);
+    margin: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    .gre,.eng{
+        text-align: center;
+        width: 50%;
+    }
+    
 
+    &:hover > .menu-pics{
+        opacity: 0.67;
+    }
+}
+
+.lfood-ctr{
+    flex: 0 1 calc(49% - 8px);
+}
+
+.left{
+    animation: fadeInLeft 1s ease-in;
+}
+.right{
+    animation: fadeInRight 1s ease-in;
+}
+
+
+.food-option{
+    width: 10em;
+    margin-top: 5em;
+    min-height: 4em;
+
+    display: flex;
+    justify-content: center;
+    background-color: #F87060;
+    color: black;
+    text-transform: uppercase;
+   
+}
+
+
+// hides breakfast,lunch food and warning messages
+.bfhide,.luhide{
+    display: none;
+}
+
+
+.bfast,.lunch{           
+    background-color: transparent;
+    font-family: 'Futura';
+    letter-spacing: 3px;
+
+    border:2px solid white;
+    color: white;
+    text-transform: uppercase;
+    
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 1.3em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    
+    &:hover > span::before{
+        right:0;
+        transition: right 0.5s ease-in;
+    }
+
+    span{
+
+        &:hover{
+            color: $secondary-color;
+        }
+        z-index: 1;
+
+        &:before{
+            content:"";
+            position: absolute;
+            background: white;
+            top: 0;
+            bottom: 0;
+            right: 100%;
+            left: 0;
+            z-index: -1;
+            transition: right 0.09s ease-in;
+        }    
+    }
+}
+
+// Hides the breakfast,lunch buttons when clicked
+.bhide,.lhide{
+    display: none;
+}
+    
+        
+
+
+.menu-pics{
+    max-width: 180px;
+    max-height: 180px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+
+.bwarning,.lwarning{
+    position: absolute;
+    bottom:-2.5%;
+    font-size: 0.8em;
+    
+}
+
+
+/*
+*   FOOD MENU STYLING ENDS ---------------------------------------------------------------------------------
+*
+*/
 
 
 .board-ctr{

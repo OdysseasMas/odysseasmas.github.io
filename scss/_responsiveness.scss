@@ -99,6 +99,13 @@
     .board-wrapper .board-ctr .rect-ctr p{
         line-height: 1.6em;
     }
+
+    .bf-new-layout,.lu-new-layout{
+        width: 95vw;
+    }
+    .arrow-back,.larrow-back{
+        left:1.5%
+    }
 }
 
 
@@ -149,9 +156,12 @@
         height: 30vw;
     }
 
+    
+   
+
 }
     
-    
+
 
 
 
@@ -164,8 +174,26 @@
 
 
     // Take a tour
-    .catalogue-ctr{
-        height: 84vw;
+
+    .bfast:hover > span::before{
+        transition: right 0.10s ease-in;
+    }
+    body .bfood-ctr{
+        flex: 0 1 calc(90% - 8px);    
+    }
+    body .lfood-ctr{
+        flex: 0 1 calc(90% - 8px)
+    }
+
+    body .lwarning{
+        bottom: -0.8%;
+    }
+    body .special{
+        margin-top: 5em; 
+    }
+
+    .breakfast-ctr .warning{
+        bottom: -2%;
     }
 
     .options-ctr{
