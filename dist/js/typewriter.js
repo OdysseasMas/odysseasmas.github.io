@@ -25,7 +25,7 @@ function typeWrite(){
 
   var dataText; 
   // checks if in home or who we are
-  if (window.location.pathname == "/index.html"){
+  if (window.location.pathname in ["/index.html","/"]){
     dataText = document.getElementById('twrite');
     option_used = option1;
   } else{
