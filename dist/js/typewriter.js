@@ -3,8 +3,8 @@
 // This uses a typewriter plugin library. Credits to @: https://safi.me.uk/typewriterjs/
 // It's a great and unbilevably simple typewriter.
 
-$(document).ready(function(){typeWrite();});
-
+// $(document).ready(function(){typeWrite();});
+typeWrite();
 
 var listen_greek = document.querySelector('#gre');
 var listen_english = document.querySelector('#eng');
