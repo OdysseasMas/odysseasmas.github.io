@@ -417,13 +417,12 @@ header {
       background: #F2ebd4;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      opacity: 0.78; }
+      opacity: 1; }
     .info-wrapper .text-ctr .text {
       margin: 2em;
       line-height: 1.7em;
       color: #354863;
-      padding: 1em;
-      z-index: 40; }
+      padding: 1em; }
 
 .gallery-ctr {
   overflow: hidden;
