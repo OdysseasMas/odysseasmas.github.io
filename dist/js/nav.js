@@ -10,7 +10,7 @@ function smDirect(platform){
 function pDirect(page){
   if (page == 'home'){
     // toggleLanguage(localStorage.getItem('current_language'))
-    window.open("/dist/index.html", '_parent');
+    window.open("/index.html", '_parent');
   } else if (page == 'takeatour'){
     // toggleLanguage(localStorage.getItem('current_language'))
     window.open("/dist/takeatour.html", '_parent');
