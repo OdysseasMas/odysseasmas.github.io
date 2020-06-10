@@ -96,9 +96,15 @@ $third-color:#212422; // eery black
     // language switching
     height: 50px;
     width: 170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
     // End of language switching
     
     
