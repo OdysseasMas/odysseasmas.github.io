@@ -711,19 +711,15 @@ header {
   border: 1px solid lightgray;
   border-top: 1px solid whitesmoke;
   border-radius: 4px;
-  flex: 0 1 calc(40% - 8px);
   margin: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
   .bfood-ctr .gre, .bfood-ctr .eng, .lfood-ctr .gre, .lfood-ctr .eng, .dfood-ctr .gre, .dfood-ctr .eng {
     text-align: center;
-    width: 50%; }
+    width: 200px; }
   .bfood-ctr:hover > .menu-pics, .lfood-ctr:hover > .menu-pics, .dfood-ctr:hover > .menu-pics {
     opacity: 0.67; }
-
-.lfood-ctr {
-  flex: 0 1 calc(49% - 8px); }
 
 .left {
   animation: fadeInLeft 1s ease-in; }
@@ -1065,10 +1061,8 @@ header {
 @media only screen and (max-width: 768px) {
   .bfast:hover > span::before {
     transition: right 0.10s ease-in; }
-  body .bfood-ctr {
-    flex: 0 1 calc(90% - 8px); }
-  body .lfood-ctr {
-    flex: 0 1 calc(90% - 8px); }
+  body .bfood-ctr .gre, body .bfood-ctr .eng, .lfood-ctr .gre, .lfood-ctr .eng, .dfood-ctr .gre, .dfood-ctr .eng {
+    width: 100px; }
   body .lwarning {
     bottom: -0.8%; }
   body .special {

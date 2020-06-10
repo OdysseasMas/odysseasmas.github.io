@@ -178,12 +178,15 @@
     .bfast:hover > span::before{
         transition: right 0.10s ease-in;
     }
-    body .bfood-ctr{
-        flex: 0 1 calc(90% - 8px);    
+    
+    body .bfood-ctr,.lfood-ctr,.dfood-ctr{
+        .gre,.eng{
+            
+            width: 100px;
+        }
     }
-    body .lfood-ctr{
-        flex: 0 1 calc(90% - 8px)
-    }
+
+
 
     body .lwarning{
         bottom: -0.8%;

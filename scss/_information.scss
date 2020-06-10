@@ -295,7 +295,6 @@ $third-color:#212422; // eery black
     border: 1px solid lightgray;
     border-top: 1px solid whitesmoke;
     border-radius: 4px;
-    flex: 0 1 calc(40% - 8px);
     margin: 6px;
     display: flex;
     justify-content: space-between;
@@ -304,7 +303,7 @@ $third-color:#212422; // eery black
     
     .gre,.eng{
         text-align: center;
-        width: 50%;
+        width: 200px;
     }
     
 
@@ -314,9 +313,6 @@ $third-color:#212422; // eery black
  
 }
 
-.lfood-ctr{
-    flex: 0 1 calc(49% - 8px);
-}
 
 .left{
     animation: fadeInLeft 1s ease-in;
