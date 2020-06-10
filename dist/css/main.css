@@ -1075,6 +1075,12 @@ header {
     bottom: 0;
     right: 0; }
 
+.info-wrapper {
+  height: 70px; }
+
+#twrite-two {
+  font-size: 1em; }
+
 @media only screen and (max-width: 1200px) {
   .btn-links {
     display: none; }
