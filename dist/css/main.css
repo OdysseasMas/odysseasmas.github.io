@@ -1079,7 +1079,7 @@ header {
   height: 70px; }
 
 #twrite-two {
-  font-size: 1em; }
+  font-size: 2em; }
 
 @media only screen and (max-width: 1200px) {
   .btn-links {
@@ -1172,12 +1172,6 @@ header {
     height: 30vw; } }
 
 @media only screen and (max-width: 768px) {
-  /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 6 version
-*/
   .bfast:hover > span::before {
     -webkit-transition: right 0.10s ease-in;
     -o-transition: right 0.10s ease-in;
@@ -1263,7 +1257,9 @@ header {
     width: 60% !important; }
     .bio-greg p, .bio-john p {
       font-size: 1.2em !important;
-      color: #F2EBD4; } }
+      color: #F2EBD4; }
+  #twrite-two {
+    font-size: 1em; } }
 
 @media only screen and (max-width: 480px) {
   body .welcome-ctr .iframe-ctr {

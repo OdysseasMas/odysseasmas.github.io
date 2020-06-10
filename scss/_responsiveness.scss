@@ -174,13 +174,6 @@
 @media only screen and (max-width: 768px){
     // Take a tour
 
-    /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 6 version
-*/
-
  .bfast:hover > span::before{
     -webkit-transition: right 0.10s ease-in;
     -o-transition: right 0.10s ease-in;
@@ -326,6 +319,10 @@
             font-size: 1.2em !important;
             color: $primary-color;
         }
+    }
+
+    #twrite-two{
+        font-size: 1em;
     }
 }
 
