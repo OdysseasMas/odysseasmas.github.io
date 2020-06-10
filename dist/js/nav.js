@@ -3,8 +3,12 @@
  *  in a new tab.
  */
 function smDirect(platform){
-    if (platform == 'ig') 
+    if (platform == 'ig') {
         window.open("https://www.instagram.com/argocruising", '_blank');
+    } else {
+      window.open("https://www.facebook.com/Argo-cruising-113876593638671/about/?ref=page_internal", '_blank');
+    }
+      
 }
 
 function pDirect(page){

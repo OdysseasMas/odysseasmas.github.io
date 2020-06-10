@@ -6,7 +6,6 @@ $third-color:#212422; // eery black
 *   Start of take a tour page (takeatour.html)  NOT FIEX FOR VENDOR PREFIX FROM HERE AND DOWN
 */
 
-
 .welcome-ctr{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -36,9 +35,19 @@ $third-color:#212422; // eery black
     
             display: flex;
 
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
+            -webkit-box-orient: vertical;
+
+            -webkit-box-direction: normal;
+
+                -ms-flex-direction: column;
+
+                    flex-direction: column;
+            -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
 
 
             -webkit-box-sizing: border-box;
@@ -48,12 +57,16 @@ $third-color:#212422; // eery black
             height: 100%;
 
             div:nth-child(-n+2) {
-                animation: fadeInLeftBig 2s linear;
-                animation-iteration-count: 1;
+                -webkit-animation: fadeInLeftBig 2s linear;
+                        animation: fadeInLeftBig 2s linear;
+                -webkit-animation-iteration-count: 1;
+                        animation-iteration-count: 1;
             }
             div:nth-last-child(-n+2) {
-                animation: fadeInRightBig 2s linear;
-                animation-iteration-count: 1;
+                -webkit-animation: fadeInRightBig 2s linear;
+                        animation: fadeInRightBig 2s linear;
+                -webkit-animation-iteration-count: 1;
+                        animation-iteration-count: 1;
                 
             }
             
@@ -63,8 +76,7 @@ $third-color:#212422; // eery black
             .welcome-text{
                 
                 font-size: 1.5em;
-                margin: 0;
-                // width: 14em;
+                margin: 0;               
                 width: 20vw;
               
                 font-family: 'Cabin', sans-serif;
@@ -74,14 +86,16 @@ $third-color:#212422; // eery black
       
             .end{
                 background-color: $primary-color;                
-                align-self: flex-end;
+                -ms-flex-item-align: end;                
+                    align-self: flex-end;
                 
 
             }
 
             .start{
                 background-color: $secondary-color;
-                align-self: flex-start;
+                -ms-flex-item-align: start;
+                    align-self: flex-start;
             }
 
          
@@ -134,10 +148,18 @@ $third-color:#212422; // eery black
             color: $third-color;
             font-size: 0.9em;
 
-            // expeerimenting
+            display: -webkit-box;
+
+            display: -ms-flexbox;
+
             display: flex;
-            flex-direction: column;
-            justify-content: center;                                   
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;                                   
             height: 3em;
             
             p{
@@ -145,8 +167,11 @@ $third-color:#212422; // eery black
                 height: 50%;
 
                 &:hover{
+                    -webkit-transition: all .3s ease-out;
+                    -o-transition: all .3s ease-out;
                     transition: all .3s ease-out;
-                    box-shadow: 0 -1px 0 0 $primary-color inset, 0 -3px 0 0 $secondary-color inset;
+                    -webkit-box-shadow: 0 -1px 0 0 $primary-color inset, 0 -3px 0 0 $secondary-color inset;
+                            box-shadow: 0 -1px 0 0 $primary-color inset, 0 -3px 0 0 $secondary-color inset;
                 }
                 
             }
@@ -170,6 +195,7 @@ $third-color:#212422; // eery black
 
     
 }
+
 /*
 *   FOOD MENU STYLING STARTS ---------------------------------------------------------------------------------
 *
@@ -190,8 +216,12 @@ $third-color:#212422; // eery black
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     position: relative;
 
@@ -211,9 +241,16 @@ $third-color:#212422; // eery black
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     position: relative;
 
@@ -232,50 +269,94 @@ $third-color:#212422; // eery black
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     position: relative;
 
 }
 
-// different flexbox when menu items are shown
-.bf-new-layout{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background: none;
-    width: 75vw;
-    min-height: fit-content; // min !
-}
 
-.lu-new-layout{
+.bf-new-layout{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background: none;
     width: 75vw;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content; 
+}
+.lu-new-layout{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: none;
+    width: 75vw;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
     min-height: fit-content;
 }
 
 .di-new-layout{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: none;
     width: 75vw;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
     min-height: fit-content;
 }
 
-// food option
+
 .option-ctr{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     
 }
 
@@ -286,19 +367,26 @@ $third-color:#212422; // eery black
     cursor: pointer;
     
     &:hover{
-        animation: heartBeat 2s linear;
+        -webkit-animation: heartBeat 2s linear;
+                animation: heartBeat 2s linear;
     }
 }
 
-// breakfast food container
+
 .bfood-ctr,.lfood-ctr,.dfood-ctr{
     border: 1px solid lightgray;
     border-top: 1px solid whitesmoke;
     border-radius: 4px;
     margin: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
     
     .gre,.eng{
@@ -315,10 +403,12 @@ $third-color:#212422; // eery black
 
 
 .left{
-    animation: fadeInLeft 1s ease-in;
+    -webkit-animation: fadeInLeft 1s ease-in;
+            animation: fadeInLeft 1s ease-in;
 }
 .right{
-    animation: fadeInRight 1s ease-in;
+    -webkit-animation: fadeInRight 1s ease-in;
+            animation: fadeInRight 1s ease-in;
 }
 
 
@@ -327,8 +417,14 @@ $third-color:#212422; // eery black
     margin-top: 5em;
     min-height: 4em;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: #F87060;
     color: black;
     text-transform: uppercase;
@@ -336,7 +432,7 @@ $third-color:#212422; // eery black
 }
 
 
-// hides breakfast,lunch food and warning messages
+
 .bfhide,.luhide,.dihide{
     display: none;
 }
@@ -357,10 +453,19 @@ $third-color:#212422; // eery black
     border-radius: 3px;
     font-size: 1.3em;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     
     
@@ -389,12 +494,14 @@ $third-color:#212422; // eery black
             right: 100%;
             left: 0;
             z-index: -1;
+            -webkit-transition: right 0.09s ease-in;
+            -o-transition: right 0.09s ease-in;
             transition: right 0.09s ease-in;
         }    
     }
 }
 
-// Hides the breakfast,lunch buttons when clicked
+
 .bhide,.lhide,.dhide{
     display: none;
 }
@@ -419,11 +526,13 @@ $third-color:#212422; // eery black
 }
 
 
+
+
+
 /*
 *   FOOD MENU STYLING ENDS ---------------------------------------------------------------------------------
 *
 */
-
 
 .board-ctr{
   
@@ -489,3 +598,7 @@ $third-color:#212422; // eery black
     }
 }
 
+
+#large-text{
+    line-height: 2em;
+}

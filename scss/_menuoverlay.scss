@@ -47,14 +47,6 @@ $third-color:#212422; // Eerie black for overlay letters
         
     
         .nav-item{
-            // This prevents double-bordering all the buttons
-            // &:nth-child(1){
-            //     border-top: 2px solid $secondary-color;
-            // }
-            // border-bottom: 2px solid $secondary-color;            
-            // -webkit-box-flex: 0.07;            
-            //     -ms-flex-positive: 0.07;            
-            //         flex-grow: 0.07;
             position: relative;
             text-align: center;                        
             display: -webkit-box;                        

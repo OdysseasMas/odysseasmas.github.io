@@ -14,10 +14,6 @@
         font-size: 2vw;
     }
 
-    // .menu{
-    //     width: 25%;
-    // }
-    
 
     // Take a Tour
     .welcome-ctr{
@@ -64,6 +60,11 @@
     .board-ctr .rect-ctr p{
         line-height: 2.5em;
     }
+
+    #large-text{
+        font-size: 0.8em;
+        line-height: 2em;
+    }
 }
 
 
@@ -97,7 +98,11 @@
 
     // Take a tour
     .board-wrapper .board-ctr .rect-ctr p{
-        line-height: 1.6em;
+        line-height: 1.6em;    
+    }
+
+    #large-text{
+        font-size: 0.8em;
     }
 
     .bf-new-layout,.lu-new-layout,.di-new-layout{
@@ -167,18 +172,21 @@
 
 // When width <= 768px
 @media only screen and (max-width: 768px){
-    // Home page 
-    // .menu{
-    //     width: 35%;
-    // }
-
-
     // Take a tour
 
-    .bfast:hover > span::before{
-        transition: right 0.10s ease-in;
-    }
-    
+    /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 6 version
+*/
+
+ .bfast:hover > span::before{
+    -webkit-transition: right 0.10s ease-in;
+    -o-transition: right 0.10s ease-in;
+    transition: right 0.10s ease-in;
+}
+
     body .bfood-ctr,.lfood-ctr,.dfood-ctr{
         .gre,.eng{
             
@@ -216,13 +224,23 @@
     }
 
     .board-ctr{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .reverse{
-        flex-direction: column-reverse;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     #one{
@@ -239,7 +257,7 @@
             line-height: 1.5em;
             font-size: 1em;
         }
-    }
+}
 
 
     // Who we are
