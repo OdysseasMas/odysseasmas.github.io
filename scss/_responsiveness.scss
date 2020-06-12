@@ -119,22 +119,22 @@
 // Screen width < 900px 
 @media only screen and (max-width: 900px){
     // Home
-    .gallery-ctr{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+    // .gallery-ctr{
+    //     display: -webkit-box;
+    //     display: -ms-flexbox;
+    //     display: flex;
+    //     -webkit-box-orient: vertical;
+    //     -webkit-box-direction: normal;
+    //         -ms-flex-direction: column;
+    //             flex-direction: column;
+    //     -webkit-box-align: center;
+    //         -ms-flex-align: center;
+    //             align-items: center;
 
-        .gpic{
-            width: 100%;
-        }
-      }
+    //     .gpic{
+    //         width: 100%;
+    //     }
+    //   }
 
     .info-wrapper{
         display: -webkit-box;
@@ -174,16 +174,16 @@
 @media only screen and (max-width: 768px){
     // Take a tour
 
- .bfast:hover > span::before{
-    -webkit-transition: right 0.10s ease-in;
-    -o-transition: right 0.10s ease-in;
-    transition: right 0.10s ease-in;
-}
+    .bfast:hover > span::before{
+        -webkit-transition: right 0.10s ease-in;
+        -o-transition: right 0.10s ease-in;
+        transition: right 0.10s ease-in;
+    }
 
     body .bfood-ctr,.lfood-ctr,.dfood-ctr{
         .gre,.eng{
             
-            width: 100px;
+            width: 170px;
         }
     }
 
@@ -331,6 +331,11 @@
 
 // When width <= 400px (changed to 480)
 @media only screen and (max-width: 480px){
+    // Home
+    body .img-ctr{
+        width: 100%;
+    }
+
     // Take a tour
     body .welcome-ctr .iframe-ctr{
         width: 100vw;

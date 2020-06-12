@@ -25,3 +25,36 @@ function check_if_in_view(){
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
+
+// Functionality for the image slideshow in home
+function slideshow(direction){
+  var last_photo = sessionStorage.getItem('last_photo');
+  if (direction == "back"){
+    if (last_photo == null){
+      sessionStorage.setItem('last_photo', '#o0');
+      last_photo = sessionStorage.getItem('last_photo');
+    }
+    var order = parseInt(last_photo[2]) - 1;
+    if (order < 0) { order = 7};
+    var prev = "#o" + order.toString();
+    var curr = document.querySelector(last_photo);
+    curr.classList.add('no-show');
+    var show = document.querySelector(prev);
+    show.classList.remove('no-show');
+    sessionStorage.setItem('last_photo', prev);
+  } else {
+    if (last_photo == null){
+      sessionStorage.setItem('last_photo', '#o0');
+      last_photo = sessionStorage.getItem('last_photo');
+    }
+    var order = parseInt(last_photo[2]) + 1;
+    if (order > 7) { order = 0};
+    var next = "#o" + order.toString();
+    var curr = document.querySelector(last_photo);
+    curr.classList.add('no-show');
+    var show = document.querySelector(next);
+    show.classList.remove('no-show');
+    sessionStorage.setItem('last_photo', next);
+  }
+
+}

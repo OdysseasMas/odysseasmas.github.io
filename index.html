@@ -8,6 +8,9 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
     <title>Argo Cruising</title>
     <link rel=icon href=dist/img/favicon.png>
 
@@ -17,13 +20,7 @@
     <meta property="og:description" content="Offering boat tour trips with a ton of activities for individuals or groups.">
     <meta property="og:image" content="/dist/img/og.jpg">
     <meta property="og:url" content="http://argocruising.com/index.html">
-    <!-- <meta name="twitter:card" content="summary_large_image"> -->
-
-
-    <!--  Non-Essential, But Recommended -->
-
-    <!-- <meta property="og:site_name" content="European Travel, Inc.">
-    <meta name="twitter:image:alt" content="Alt text for image"> -->
+    
    
 </head> 
 <body>
@@ -132,24 +129,55 @@
             </div>
             
             <div class = "gallery-ctr">
+               
+
+                <div class="background-ctr">
+                    
+                    <div class="img-ctr">
+                        <img onclick = "slideshow('back')" src = "dist/img/back.png" class = "back">
+                        <img onclick = "slideshow('forward')" src = "dist/img/back.png" class = "forward">
+                        
+                        <img src = "dist/img/gallery2.jpeg" id = "o0" class = "gpic" ></img>
+                      
+    
+                    </div>
+               
+                    <div class="img-ctr">
+                        <img src = "dist/img/gallery3.jpeg" id = "o1"  class = "gpic no-show"></img>
+                        
+                    </div> 
+                    <div  class="img-ctr">
+                        <img src = "dist/img/gallery4.jpeg" id = "o2" class = "gpic no-show"></img>
+    
+                    </div>
+                    <div  class="img-ctr">
+                        <img src = "dist/img/gallery5.jpeg" id = "o3" class = "gpic no-show"></img>
+                        
+                    </div>
+    
+                    <div  class="img-ctr">
+                        <img src = "dist/img/gallery7.jpeg" id = "o4" class = "gpic no-show"></img>
+                      
+                        
+                    </div> 
+                    <div  class="img-ctr">
+                        <img src = "dist/img/gallery8.jpeg" id = "o5" class = "gpic no-show"></img>
+                        
+                    </div>
+                    <div  class="img-ctr">
+                        <img src = "dist/img/gallery10.jpeg" id = "o6" class = "gpic no-show"></img>
+                        
+                    </div>
+                    <div class="img-ctr">
+                        <img src = "dist/img/gallery9.jpeg" id = "o7"  class = "gpic no-show"></img>
+                        
+                    </div> 
+
+
+
+                </div>
                 
-                <div class="img-ctr">
-                    <img src = "dist/img/gallery2.jpeg" onscroll="" class = "gpic hide" ></img>
-
-                </div>
-           
-                <div class="img-ctr">
-                    <img src = "dist/img/gallery3.jpeg" class = "gpic hide"></img>
-                    
-                </div> 
-                <div class="img-ctr">
-                    <img src = "dist/img/gallery4.jpeg" class = "gpic hide"></img>
-
-                </div>
-                <div class="img-ctr">
-                    <img src = "dist/img/gallery5.jpeg" class = "gpic hide"></img>
-                    
-                </div>
+                
             </div>
 
             <div class="info-wrapper">
@@ -175,27 +203,6 @@
                 
             </div>
         
-            <div class="gallery-ctr">
-
-                <div class="img-ctr">
-                    <img src = "dist/img/gallery7.jpeg" class = "gpic hide"></img>
-                  
-                    
-                </div> 
-                <div class="img-ctr">
-                    <img src = "dist/img/gallery8.jpeg" class = "gpic hide"></img>
-                    
-                </div>
-                <div class="img-ctr">
-                    <img src = "dist/img/gallery10.jpeg" class = "gpic hide"></img>
-                    
-                </div>
-                <div class="img-ctr">
-                    <img src = "dist/img/gallery9.jpeg" class = "gpic"></img>
-                    
-                </div> 
-           
-            </div>
         </div>
         <script src="dist/js/nav.js"></script> 
         <script src="dist/js/typewriter.js"></script> 
@@ -206,5 +213,12 @@
    
     
 </body>
+
+
+
+<footer>
+    <div class="separator"></div>
+    <p class = "eng" > © Argo Cruising 2020</p>   
+</footer>
 
 </html>
