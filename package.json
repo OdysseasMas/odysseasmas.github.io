@@ -13,7 +13,7 @@
     "aos": "^2.3.4",
     "interactjs": "^1.9.10",
     "jquery": "^3.5.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "typewriter-effect": "^2.13.1"
   }
 }
